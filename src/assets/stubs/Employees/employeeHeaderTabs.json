@@ -1,0 +1,9 @@
+{
+    "employeesHeadertabs": {
+        "first_tab": "All",
+        "second_tab": "Active",
+        "third_tab": "On Leave",
+        "fourth_tab": "Probationary",
+        "fifth_tab": "Resigned"
+    }
+}

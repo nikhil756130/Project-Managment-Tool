@@ -1,0 +1,22 @@
+<app-employee-title></app-employee-title>
+<div class="bg-white ps-4 pt-2 mx-3 mt-3">
+  <div class="buttons-container d-flex bg-white">
+    <div class="button" (click)="showComponentall()" [ngClass]="{'active': activeTab === 'all'}">
+      {{ employeeHeaderTabs.first_tab }}
+    </div>
+    <div class="button" (click)="showComponentactive()" [ngClass]="{'active': activeTab === 'active'}">
+      {{ employeeHeaderTabs.second_tab }}
+    </div>
+    <div class="button" (click)="showComponentonleave()" [ngClass]="{'active': activeTab === 'OnLeave'}">
+      {{ employeeHeaderTabs.third_tab }}
+    </div>
+    <div class="button" (click)="showComponentprobationary()" [ngClass]="{'active': activeTab === 'Probationary'}">
+      {{ employeeHeaderTabs.fourth_tab }}
+    </div>
+    <div class="button" (click)="showComponentresigned()" [ngClass]="{'active': activeTab === 'Resigned'}">
+      {{ employeeHeaderTabs.fifth_tab }}
+    </div>
+  </div>
+</div>
+<mat-divider class="mx-3"></mat-divider>
+<router-outlet></router-outlet>

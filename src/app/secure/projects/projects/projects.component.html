@@ -1,0 +1,55 @@
+<!-- Projects Header Component includes Edit and Delete Project -->
+<mat-toolbar class="projectDetailsHeader">
+    <mat-card-header>
+        <mat-card-title class="projectTitle">Project Management Tool
+            <mat-icon>keyboard_arrow_down</mat-icon>
+        </mat-card-title>
+        <mat-card-subtitle class="projectSubTitle">
+            <span class="sidenavTabName">Projects </span>
+            <mat-icon>keyboard_arrow_right</mat-icon> <span>Project Management Tool</span>
+        </mat-card-subtitle>
+    </mat-card-header>
+
+    <span class="example-spacer"></span>
+
+    <mat-card-header class="projectHeaderButtons">
+        <div class="gap-2">
+            <button type="button" class="edit-button btn me-3">
+                <div class="d-flex align-items-center">
+                    <img src="../../../../assets/images/icons/edit.png" alt="Edit icon" class="projectHeaderImage">
+                    <span>Edit Project</span>
+                </div>
+            </button>
+            <button type="button" class="delete-button btn" >
+                <div class="d-flex align-items-center">
+                    <img src="../../../../assets/images/icons/delete.png" alt="Delete icon" class="projectHeaderImage">
+                    <span>Delete Project</span>
+                </div>
+            </button>
+        </div>
+    </mat-card-header>
+
+    <mat-card-header class="toggleProjectHeaderButtons d-lg-none">
+        <div class="gap-3 d-flex ">
+            <span><img src="../../../../assets/images/icons/edit.png" alt="Edit icon"></span>
+            <span><img src="../../../../assets/images/icons/delete.png" alt="Delete icon"></span>
+        </div>
+    </mat-card-header>
+</mat-toolbar>
+
+<mat-tab-group class="bg-white m-3 h-100">
+    <mat-tab label="Overview" class="matWidth"></mat-tab>
+    <mat-tab label="Work Items"></mat-tab>
+    <mat-tab label="Changes"></mat-tab>
+    <mat-tab label="Issues"></mat-tab>
+    <mat-tab label="Risks"></mat-tab>
+    <mat-tab label="Team"></mat-tab>
+    <mat-tab label="Chat"></mat-tab>
+    <mat-tab label="Meetings"></mat-tab>
+    <mat-tab label="Documents"></mat-tab>
+    <mat-tab label="Status Report"></mat-tab>
+    <mat-tab label="Environment"></mat-tab>
+    <mat-tab label="Releases"></mat-tab>
+    <mat-tab label="Recent Activity"></mat-tab>
+    <mat-tab label="Settings"></mat-tab>
+</mat-tab-group>

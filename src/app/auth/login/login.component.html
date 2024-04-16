@@ -1,0 +1,95 @@
+<div class="container-fluid bg-white">
+    <div class="row">
+        <div class="col-lg-5 col-md-12 box-shadow-right-side login-page-padding-container">
+            <!-- PM Tool Logo -->
+            <app-logo></app-logo>
+
+            <div class="loginCredentialSection">
+                <h3 class="fw-bold fs-5">{{logInFormLabel.loginIn}}</h3>
+
+                <!-- Email Input Field ||Global email-input-field component -->
+                <div class="emailInput">
+                    <app-email-field [inputConfig]="emailConfig" [formInstance]="loginForm"
+                        controlName="email"></app-email-field>
+                </div>
+                <!-- Password Input Field || Global password-input-field component -->
+                <div class="passwordInput">
+                    <app-password-field [inputConfig]="passwordConfig" [formInstance]="loginForm"
+                        controlName="password"></app-password-field>
+                </div>
+                <!-- Remember me Checkbox -->
+                <div class="login-page-checkbox d-flex my-4">
+                    <div class="d-flex text-center">
+                        <input type="checkbox" class="rememberMeCheckbox me-2" name="rememberMeCheckbox"
+                            [checked]="rememberMe" (click)="onCheckboxClick($event)" (keydown.enter)="clickCheckbox()">
+
+                        <label for="rememberMeCheckbox"
+                            class="rememberMeCheckboxLabel">{{logInFormLabel.rememberMe}}</label>
+                    </div>
+                    <span class="example-spacer"></span>
+                    <!-- Forgot Password Button -->
+                    <a tabindex="0" role="button" (click)="onForgotPasswordClick()"
+                        (keydown.enter)="onForgotPasswordClick()"
+                        class="text-decoration-none cusrsorChange">{{logInFormLabel.forgotPassword}}?</a>
+                </div>
+
+                <!-- login Button -->
+                @if(!isLoading){
+                <button type="button" [disabled]="loginForm.invalid" (click)="onLoginClick($event)"
+                    [ngStyle]="{'opacity': loginForm.invalid ? 0.5 : 1}"
+                    class="facebook-button login-input-field social-media-button">
+                    {{logInFormLabel.loginIn}}
+                </button>
+                }
+
+                <!-- Login Button when the server is busy the loading symbol will appear -->
+                @if(isLoading){
+                <button type="button" *ngIf="isLoading"
+                    class="facebook-button login-input-field social-media-button mt-4 loaderButton">
+                    <span class="loaderImage me-2"></span>
+                    <span>{{logInFormLabel.checkingMessage}}</span>
+                </button>
+                }
+
+                <!-- SignUp Button -->
+                <div class="account-check-container">
+                    <span class="me-2">Don't have an account?</span>
+                    <a tabindex="0" class="text-decoration-none cusrsorChange" (keydown.enter)="onClickSignup()"
+                        (click)="onClickSignup()">{{logInFormLabel.signUp}}</a>
+                </div>
+
+                <div class="my-4">
+                    <h3 class="horizontal-text-decorator">Or</h3>
+                </div>
+
+                <!-- Social Media Sign In Module -->
+                <button type="button" class="social-media-button login-input-field google-button"
+                    (click)="onGoogleSignInClick()">
+                    <img src="/assets/images/button_Images/googleImage.png" alt="Google Image" class="me-3">
+                    {{logInFormLabel.singInGoogle}}
+                </button> <!-- Social Media Sign In with Google  -->`
+
+                <button type="button" class="social-media-button login-input-field facebook-button"
+                    (click)="onFacebookSignInClick()">
+                    <img src="/assets/images/button_Images/facebookImage.png" alt="Facebook Image" class="me-3">
+                    {{logInFormLabel.signInFacebook}}
+                </button> <!-- Social Media Sign In with Facebook -->
+            </div>
+        </div>
+
+        <!-- Login Welcome Message -->
+        <div class="col-lg-7 col-md-12 login-page-padding-container login-right-content d-flex align-items-center">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>{{sideDescription.header}}</h1>
+                    <h3>{{sideDescription.subtitle}}</h3>
+                    <p>{{sideDescription.msg1}}</p>
+                    <p>{{sideDescription.msg2}}</p>
+                    <h4>{{sideDescription.msg3}}</h4>
+                    <p>{{sideDescription.msg4}}</p>
+                    <p>{{sideDescription.msg5}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

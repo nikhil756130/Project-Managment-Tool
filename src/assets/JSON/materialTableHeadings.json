@@ -1,0 +1,24 @@
+{
+    "tableHeadings": {
+        "headings": [
+            {
+                "variable": "Job Title"
+            },
+            {
+                "variable": "Department"
+            },
+            {
+                "variable": "Employee Type"
+            },
+            {
+                "variable": "Manager"
+            },
+            {
+                "variable": "Office"
+            },
+            {
+                "variable": "Duration"
+            }
+        ]
+    }
+}

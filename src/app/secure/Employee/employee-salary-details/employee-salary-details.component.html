@@ -1,0 +1,92 @@
+<div class="bg-white h-100 p-3">
+    <div class="row ms-1 mt-3">
+        <span class="salary"> <b>{{ salary }}</b><span class="text-muted">/year</span></span>
+    </div>
+    <!-- Internship Details -->
+    <div class="row p-2 m-2 mt-4">
+        <div class="col-6">
+            <app-image-with-text class="Internship py-1 my-1" imageSource="/assets/images/Icons/flagimage.png" text="Internship"
+                textType="heading"></app-image-with-text>
+    
+            <div class="row">
+                   <!-- side vertical line  -->
+                <div class="col-1 p-0 m-0">
+                    <div class="vertical-line"></div>
+                </div>
+                <div class="col-11">
+                    <div class="row my-2">
+                        <app-label-and-value class="label-value" [label]="keys.WorkExperience"
+                            [value]="salarydetails.WorkExperience"></app-label-and-value>
+                    </div>
+                    <div class="row my-2">
+                        <app-label-and-value class="label-value" [label]="keys.Desigination"
+                            [value]="salarydetails.Desigination"></app-label-and-value>
+                    </div>
+                    <div class="row my-2">
+                        <app-label-and-value class="label-value" [label]="keys.JoiningDate"
+                            [value]="salarydetails.JoiningDate"></app-label-and-value>
+                    </div>
+                    <div class="row p-1 mb-4">
+                        <app-label-and-value class="label-value" [label]="keys.Salary"
+                            [value]="salarydetails.salary"></app-label-and-value>
+                    </div>
+                </div>
+            </div>
+            <!-- Fulltime Details -->
+            <app-image-with-text class="fullTime py-1 my-1" imageSource="/assets/images/Icons/flagimage.png" text="Full Time"
+                textType="heading"></app-image-with-text>
+    
+            <div class="row">
+                <!-- side vertical line  -->
+                <div class="col-1 p-0 m-0">
+                    <div class="vertical-line"></div>
+                </div>
+                <div class="col-11">
+                    <div class="row my-2">
+                        <app-label-and-value class="label-value" [label]="keys.WorkExperience"
+                            [value]="fullTimeDetails.WorkExperience"></app-label-and-value>
+                    </div>
+                    <div class="row my-2">
+                        <app-label-and-value class="label-value" [label]="keys.Desigination"
+                            [value]="fullTimeDetails.Desigination"></app-label-and-value>
+                    </div>
+                    <div class="row my-2">
+                        <app-label-and-value class="label-value" [label]="keys.JoiningDate"
+                            [value]="fullTimeDetails.JoiningDate"></app-label-and-value>
+                    </div>
+                    <div class="row mb-4">
+                        <app-label-and-value class="label-value" [label]="keys.Salary"
+                            [value]="fullTimeDetails.salary"></app-label-and-value>
+                    </div>
+                </div>
+    
+            </div>
+            <!--Annual Appraisal Details  -->
+            <app-image-with-text class="annualAppraisal py-1 my-1" imageSource="/assets/images/Icons/flagimage.png" text="Annual Appraisal"
+                textType="heading"></app-image-with-text>
+    
+            <div class="row">
+                <div class="col-1 p-0 m-0">
+                </div>
+                <div class="col-11">
+                    <div class="row my-2">
+                        <app-label-and-value class="label-value" [label]="keys.WorkExperience"
+                            [value]="annualSalaryDetails.WorkExperience"></app-label-and-value>
+                    </div>
+                    <div class="row my-2">
+                        <app-label-and-value class="label-value" [label]="keys.Desigination"
+                            [value]="annualSalaryDetails.Desigination"></app-label-and-value>
+                    </div>
+                    <div class="row my-2">
+                        <app-label-and-value class="label-value" [label]="keys.JoiningDate"
+                            [value]="annualSalaryDetails.JoiningDate"></app-label-and-value>
+                    </div>
+                    <div class="row">
+                        <app-label-and-value class="label-value" [label]="keys.Salary"
+                            [value]="annualSalaryDetails.salary"></app-label-and-value>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

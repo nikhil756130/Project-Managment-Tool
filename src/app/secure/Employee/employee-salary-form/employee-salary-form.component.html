@@ -1,0 +1,29 @@
+<div class="row salary-form">
+  <h3 class="salary-heading mt-3">{{salary}}</h3>
+  <div class="employee-salary-details">
+    <h3 class="horizontal-text-decorator">{{ctc}}</h3>
+  </div>
+
+  <!-- Disabled Salary -->
+  <div class="disabled-element">
+    <p class="disabled-salary">3,50,000</p>
+  </div>
+
+  <!-- Internship Details -->
+  <div class="row">
+    <app-salary-data></app-salary-data>
+  </div>
+
+  <div>
+    <button mat-button class="add-another-salary mt-3" (click)="openForm()" *ngIf="!showForm">
+      <img src="/assets/images/Icons/addbutton.jpg" alt="image">Add another Salary
+    </button>
+
+    <!-- Display the salary form below the button when showForm is true -->
+    <app-form-dialog *ngIf="showForm"></app-form-dialog>
+  </div>
+
+  <!-- buttons -->
+  <div *ngIf="!showForm">
+  </div>
+</div>

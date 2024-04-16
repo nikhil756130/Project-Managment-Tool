@@ -1,0 +1,58 @@
+{
+    "documentForm": {
+        "label": "Name",
+        "type": "text",
+        "placeholder": "Enter Name",
+        "required": "true",
+        "pattern": "",
+        "validationMessages": {
+            "required": "Please enter your name"
+        }
+    },
+    "documents":[
+        {
+            "id":1,
+            "file":
+                {
+                 "name":"Personal.docx",
+                 "size":"10834",
+                 "type":"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+                },
+           "image":"/assets/images/EmployeeImages/worde_image.png",
+           "date":"12 Jan 2023"
+        },
+        {
+            "id":2,
+            "file":
+                {
+                 "name":"Contract.pdf",
+                 "size":"10834",
+                 "type":"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+                },
+           "image":"/assets/images/EmployeeImages/pdf_image.png",
+           "date":"10 Jan 2023"
+        },
+        {
+            "id":3,
+            "file":
+                {
+                 "name":"Policies.pdf",
+                 "size":"10834",
+                 "type":"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+                },
+           "image":"/assets/images/EmployeeImages/pdf_image.png",
+           "date":"12 Jan 2023"
+        },
+        {
+            "file":
+                {
+                 "name":"Employee Form.pdf",
+                 "size":"10834",
+                 "type":"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+                },
+           "image":"/assets/images/EmployeeImages/pdf_image.png",
+           "date":"12 Jan 2023"
+        }
+    
+    ]
+}

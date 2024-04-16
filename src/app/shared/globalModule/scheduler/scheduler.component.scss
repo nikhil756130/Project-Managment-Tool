@@ -1,0 +1,54 @@
+@import "../../../../assets/css/custom.scss";
+
+//Upload Leave Plan Box designing
+.uploadleavePlanBox {
+  height: 3.5rem;
+  width: 26rem;
+  border-radius: 4px;
+  border: 1px solid $text4;
+  background: $white;
+  margin-top: 10px;
+
+  #uploadFileButton {
+    float: right;
+    margin: 8px 17px 11px 100px;
+    color: $white;
+    font-family: $app-font;
+    font-size: $text16;
+    font-style: normal;
+    font-weight: $medium;
+    line-height: normal;
+  }
+
+  #uploadLeavePlanText {
+    position: absolute;
+    margin-top: 16px;
+    margin-left: 20px;
+    color: var(--text-color-1, #0f0f0f);
+    font-family: $app-font;
+    font-size: $text18;
+    font-style: normal;
+    font-weight: $medium;
+    line-height: normal;
+  }
+}
+
+//Or Line designing Code
+.horizontal-text-decorator {
+  display: flex;
+  flex-direction: row;
+  min-width: fit-content;
+}
+.horizontal-text-decorator:before {
+  content: " ";
+  border-bottom: 2px solid $text5;
+  margin: auto;
+  width: 1rem;
+}
+.horizontal-text-decorator:after {
+  content: " ";
+  flex: 1 2;
+  border-bottom: 2px solid $text5;
+  margin: auto;
+  width: 12rem;
+}

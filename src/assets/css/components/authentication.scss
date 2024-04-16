@@ -1,0 +1,182 @@
+@import '../variable.scss';
+@import '../fonts.scss';
+
+
+// 
+.box-shadow-right-side {
+  background: #FFF;
+  box-shadow: 0px 2px 8px 0px rgba(55, 55, 55, 0.08);
+  height: 100vh;
+}
+
+.login-page-padding-container {
+  padding: 1rem 1rem;
+}
+
+.loginCredentialSection {
+  margin: 65px 0px 0px 0px;
+}
+
+.emailInput {
+  margin: 20px 0px 35px 0px;
+}
+
+.login-input-field {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  border-radius: 4px;
+  border: 1px;
+  flex-shrink: 0;
+}
+
+.social-media-button {
+  font-family: $app-font;
+  font-size: $text18;
+  font-style: normal;
+  line-height: normal;
+  border: 2px solid $text4;
+  margin-bottom: $text16;
+  justify-content: center;
+  align-items: center;
+}
+
+.google-button {
+  background-color: $google !important;
+  color: var(--text-color-1, #0F0F0F);
+}
+
+.facebook-button {
+  background-color: $facebook !important;
+  color: var(--text-color-1, #FFFFFF);
+}
+
+login-page-checkbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100% !important;
+}
+
+.account-check-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.horizontal-text-decorator {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  color: $text6;
+}
+
+.horizontal-text-decorator:before,
+.horizontal-text-decorator:after {
+  content: " ";
+  flex: 1 1;
+  border-bottom: 2px solid $text5;
+  margin: auto;
+}
+
+.login-right-content {
+  font-size: $text18;
+  font-weight: $medium;
+  color: $text7;
+  text-align: justify;
+}
+
+.login-right-content h1 {
+  font-size: $headline24;
+  color: $text1;
+  font-weight: $black !important;
+}
+
+.login-right-content h4 {
+  font-weight: $bold;
+  margin-top: 2rem;
+}
+
+.login-right-content p {
+  font-weight: $medium;
+  font-size: $text16 !important;
+}
+
+.login-right-content h3,
+.login-checkinbox-message {
+  color: $text8;
+  margin-bottom: 2rem;
+}
+
+.login-right-content h2 {
+  color: $primary;
+  font-weight: $bold;
+}
+
+.stepper-tab1 {
+  width: 3.5rem;
+  height: 0.35rem;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background: var(--accent-1-accent-1400, #33ABA0);
+}
+
+.stepper-tab2 {
+  width: 56px;
+  height: 6px;
+  flex-shrink: 0;
+  border-radius: 0.25rem;
+  background: #EDEDED;
+}
+
+.cusrsorChange {
+  cursor: pointer;
+}
+
+.back-button {
+  display: flex;
+  width: 102px;
+  height: 46px;
+  background-color: $google;
+  color: var(--text-color-1, #0F0F0F);
+  border-radius: 4px;
+  border: 1px solid var(--Primary-primary-500, #014EBA);
+  color: #014EBA;
+}
+
+.continue-button {
+  height: 46px;
+  background-color: #014EBA;
+  color: var(--text-color-1, #0F0F0F);
+  border-radius: 4px;
+  border: 1px solid var(--Primary-primary-500, #014EBA);
+  color: white;
+}
+
+.social-media-button1 {
+  font-family: $app-font;
+  font-size: $text18;
+  font-style: normal;
+  line-height: normal;
+  border: 2px solid $text4;
+  margin-bottom: $text16;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.select-option {
+  display: flex;
+  padding: 10px;
+  width: 100%;
+  height: 48px;
+  border-radius: 4px;
+  border: 1px solid gray;
+  flex-shrink: 0;
+}
+
+.work-category {
+  background-color: #FBFBFB;
+  border-radius: 5px;
+  padding: 20px;
+  margin-left: 35px;
+}

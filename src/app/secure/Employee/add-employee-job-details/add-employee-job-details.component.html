@@ -1,0 +1,301 @@
+<div class="container-fluid py-1">
+  <div class="row">
+    <span class="heading">JOB DETAILS</span>
+  </div>
+  <!-- Add Employee Information -->
+    <div class="row">
+      <h3 class="horizontal-text-decorator">Employee Information</h3>
+    </div>
+    <div class="row employeeInformationForm">
+      <!-- left column -->
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 p-0 m-0">
+        <div class="row my-3 mx-1 inputRow">
+          <app-input-field 
+            [inputConfig]="employeeInformationConfig.userName" 
+            [formInstance]="employeeInformationForm" 
+            controlName="username">
+          </app-input-field>
+        </div>
+        <div class="row my-3 mx-1 inputRow">
+          <app-input-field 
+            [inputConfig]="employeeInformationConfig.WorkExperience" 
+            [formInstance]="employeeInformationForm" 
+            controlName="workExperience">
+          </app-input-field>
+        </div>
+        <div class="row my-3 mx-1 inputRow">
+          <app-dropdown 
+            [placeholder]="employeeInformationConfig.department.placeholder" 
+            [dropdownList]="employeeInformationConfig.department.dropdownList">
+          </app-dropdown>
+        </div>
+        <div class="row my-3 mx-1 inputRow">
+          <app-date-picker 
+            [calenderName]="'Joning date'">
+          </app-date-picker>
+        </div>
+      </div>
+      <!-- right column -->
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 p-0 m-0">
+        <div class="row my-3 mx-1 inputRow">
+          <app-input-field 
+            [inputConfig]="employeeInformationConfig.employeeID" 
+            [formInstance]="employeeInformationForm" 
+            controlName="employeeId">
+          </app-input-field>
+        </div>
+        <div class="row my-3 mx-1 inputRow">
+          <app-email-field 
+            [inputConfig]="employeeInformationConfig.WorkEmail" 
+            [formInstance]="employeeInformationForm" 
+            controlName="workEmail">
+          </app-email-field>
+        </div>
+        <div class="row my-3 mx-1 inputRow">
+          <app-dropdown 
+            [placeholder]="employeeInformationConfig.designation.placeholder" 
+            [dropdownList]="employeeInformationConfig.designation.dropdownList">
+          </app-dropdown>
+        </div>
+        <div class="row my-3 mx-1 inputRow">
+          <app-dropdown 
+            [placeholder]="employeeInformationConfig.role.placeholder" 
+            [dropdownList]="employeeInformationConfig.role.dropdownList">
+          </app-dropdown>
+        </div>
+      </div>
+    </div>
+
+  <!-- Add Prohibation Information -->
+    <div class="row">
+      <h3 class="horizontal-text-decorator">Probation Information</h3>
+    </div>
+    <div class="row employeeProbation">
+      <!-- left column -->
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 p-0 m-0">
+        <div class="row my-3 mx-1 inputRow">
+          <app-date-picker 
+            [calenderName]="'Start date'">
+          </app-date-picker>
+        </div>
+        <div class="row my-3 mx-1 inputRow">
+          <app-date-picker 
+            [calenderName]="'Evaluation date'">
+          </app-date-picker>
+        </div>
+        <div class="row my-3 mx-1 inputRow">
+          <app-dropdown 
+            placeholder="Manager" 
+            [dropdownList]="employeeInformationConfig.department.dropdownList">
+          </app-dropdown>
+        </div>
+      </div>  
+      <!-- right column -->
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 p-0 m-0">
+        <div class="row my-3 mx-1 inputRow">
+            <app-date-picker 
+              [calenderName]="'End date'">
+            </app-date-picker>
+        </div>
+        <div class="row my-3 mx-1 inputRow">
+          <app-input-field 
+            [inputConfig]="employeeInformationConfig.result" 
+            [formInstance]="prohibationInformationForm" 
+            controlName="result">
+          </app-input-field>
+        </div>
+        <div class="row my-3 mx-1 inputRow">
+          <app-input-field 
+            [inputConfig]="employeeInformationConfig.comments" 
+            [formInstance]="prohibationInformationForm" 
+            controlName="comments">
+          </app-input-field>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Add Job Timeline -->
+    <div class="row">
+      <h3 class="horizontal-text-decorator">Job Timeline</h3>
+    </div>
+    <!-- Material Table -->
+    <div class="row">
+        
+    </div>
+    <div class="row employeeJobTimeline">
+      <!-- left column -->
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 p-0 m-0">
+        <div class="row my-3 mx-1 inputRow">
+          <app-input-field 
+            [inputConfig]="employeeInformationConfig.jobTitle" 
+            [formInstance]="jobTimelineInformationForm" 
+            controlName="jobTitle">
+          </app-input-field>
+        </div>
+        <div class="row my-3 mx-1 inputRow">
+          <app-dropdown 
+            [placeholder]="employeeInformationConfig.department.placeholder" 
+            [dropdownList]="employeeInformationConfig.department.dropdownList">
+          </app-dropdown>
+        </div>
+        <div class="row my-3 mx-1 inputRow">
+          <app-input-field 
+            [inputConfig]="employeeInformationConfig.office" 
+            [formInstance]="jobTimelineInformationForm" 
+            controlName="office">
+          </app-input-field>
+        </div>
+      </div>  
+      <!-- right column -->
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 p-0 m-0">
+        <div class="row my-3 mx-1 inputRow">
+          <app-dropdown 
+            [placeholder]="employeeInformationConfig.employmentType.placeholder" 
+            [dropdownList]="employeeInformationConfig.employmentType.dropdownList">
+          </app-dropdown>
+        </div>
+        <div class="row my-3 mx-1 inputRow">
+          <app-input-field 
+            [inputConfig]="employeeInformationConfig.manager" 
+            [formInstance]="jobTimelineInformationForm" 
+            controlName="manager">
+          </app-input-field>
+        </div>
+        <div class="row my-3 mx-1 inputRow">
+          <app-date-picker 
+            [calenderName]="'Duration'">
+          </app-date-picker>
+      </div>
+      </div>
+      <div class="row">
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end basic-details-button">
+          <button type="button" class="btn btn-outline-primary">Cancel</button>
+          <button type="submit" class="btn btn-primary">Save Job Timeline</button>
+        </div>
+      </div>
+    </div>
+
+  <!-- Work Schedule -->
+  <div class="row">
+    <h3 class="horizontal-text-decorator">Work Schedule</h3>
+  </div>
+  <div class="row employeeWorkSchedule">
+    <!-- left column -->
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 p-0 m-0">
+      <div class="row my-3 mx-1 inputRow">
+        <app-dropdown 
+          [placeholder]="employeeInformationConfig.currentSchedule.placeholder" 
+          [dropdownList]="employeeInformationConfig.currentSchedule.dropdownList">
+        </app-dropdown>
+      </div>
+      <div class="row my-3 mx-1 inputRow">
+        <app-input-field 
+          [inputConfig]="employeeInformationConfig.standardWorkHours" 
+          [formInstance]="workScheduleInformationForm" 
+          controlName="standarWorkHours">
+        </app-input-field>
+      </div>
+    </div>
+    <!-- right column -->
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 p-0 m-0">
+      <div class="row my-3 mx-1 inputRow">
+        <app-dropdown 
+          [placeholder]="employeeInformationConfig.scheduleType.placeholder" 
+          [dropdownList]="employeeInformationConfig.scheduleType.dropdownList">
+        </app-dropdown>
+      </div>
+      <div class="row my-3 mx-1 inputRow">
+        <app-input-field 
+          [inputConfig]="employeeInformationConfig.totalWorkHours" 
+          [formInstance]="workScheduleInformationForm" 
+          controlName="totalWorkHours">
+        </app-input-field>
+      </div>
+  </div> 
+</div>  
+<div class="container-fluid py-1">
+  <div class="row my-4 mx-1">
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 p-0 m-0">
+        <app-checkbox-with-time-picker 
+        [inputConfig]="employeeInformationConfig.timePicker" 
+        [formInstance]="workScheduleInformationForm" 
+        [controlName]="'timepicker'"
+        [checkboxlabel]="'Monday'">
+        </app-checkbox-with-time-picker>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 p-0 m-0">
+    </div>
+  </div> 
+  <div class="row my-4 mx-1">
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 p-0 m-0">
+        <app-checkbox-with-time-picker 
+        [inputConfig]="employeeInformationConfig.timePicker" 
+        [formInstance]="workScheduleInformationForm" 
+        [controlName]="'timepicker'"
+        [checkboxlabel]="'Tuesday'">
+        </app-checkbox-with-time-picker>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 p-0 m-0">
+    </div>
+  </div> 
+  <div class="row my-4 mx-1">
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 p-0 m-0">
+        <app-checkbox-with-time-picker 
+        [inputConfig]="employeeInformationConfig.timePicker" 
+        [formInstance]="workScheduleInformationForm" 
+        [controlName]="'timepicker'"
+        [checkboxlabel]="'Wednesday'">
+        </app-checkbox-with-time-picker>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 p-0 m-0">
+    </div>
+  </div> 
+  <div class="row my-4 mx-1">
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 p-0 m-0">
+        <app-checkbox-with-time-picker 
+        [inputConfig]="employeeInformationConfig.timePicker" 
+        [formInstance]="workScheduleInformationForm" 
+        [controlName]="'timepicker'"
+        [checkboxlabel]="'Thursday'">
+        </app-checkbox-with-time-picker>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 p-0 m-0">
+    </div>
+  </div> 
+  <div class="row my-4 mx-1">
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 p-0 m-0">
+        <app-checkbox-with-time-picker 
+        [inputConfig]="employeeInformationConfig.timePicker" 
+        [formInstance]="workScheduleInformationForm" 
+        [controlName]="'timepicker'"
+        [checkboxlabel]="'Friday'">
+        </app-checkbox-with-time-picker>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 p-0 m-0">
+    </div>
+  </div> 
+  <div class="row my-4 mx-1">
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 p-0 m-0">
+        <app-checkbox-with-time-picker 
+        [inputConfig]="employeeInformationConfig.timePicker" 
+        [formInstance]="workScheduleInformationForm" 
+        [controlName]="'timepicker'"
+        [checkboxlabel]="'Saturday'">
+        </app-checkbox-with-time-picker>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 p-0 m-0">
+    </div>
+  </div> 
+  <div class="row my-4 mx-1">
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 p-0 m-0">
+        <app-checkbox-with-time-picker 
+        [inputConfig]="employeeInformationConfig.timePicker" 
+        [formInstance]="workScheduleInformationForm" 
+        [controlName]="'timepicker'"
+        [checkboxlabel]="'Sunday'">
+        </app-checkbox-with-time-picker>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 p-0 m-0">
+    </div>
+  </div> 
+</div>

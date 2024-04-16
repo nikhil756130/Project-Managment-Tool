@@ -1,0 +1,38 @@
+@import "../../../../../assets/css/custom.scss";
+
+
+.nav-profile-picture {
+    background-image: url(../../../../../assets/images/profile_images/userprofile.png);
+    background-size: cover;
+  }
+  
+  .nav-profile-name {
+    color: var(--text-color-1, #0F0F0F);
+    font-family: $app-font;
+    font-size: $text18;
+    font-style: normal;
+    font-weight: $bold;
+    line-height: normal;
+  }
+  
+  .nav-profile-designation {
+    font-size: $text14;
+    font-weight: $regular;
+    margin-bottom: 20px;
+  }
+  
+  .nav-profile-dropdown {
+    margin-left: 30px;
+  }
+
+  .nav-profile-card {
+    width: 262px;
+    height: 56px;
+    flex-shrink: 0;
+    justify-content: center;
+    float: right !important;
+    background-color: $lineDivider !important;
+    border-radius: 4px;
+    border: 1px solid #E9E9E9;
+    background: #EFF0F1;
+  }

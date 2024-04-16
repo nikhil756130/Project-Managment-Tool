@@ -1,0 +1,12 @@
+{
+    "inputConfig": {
+      "label": "First Name",
+      "type": "text",
+      "placeholder": "Enter First Name",
+      "required": "false",
+      "pattern": "",
+      "validationMessages": {
+        "required": "Please enter First Name"
+      }
+    }
+  }

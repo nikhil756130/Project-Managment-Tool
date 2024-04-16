@@ -1,0 +1,81 @@
+@import "../../../../assets/css/custom.scss";
+
+.nameComponent {
+    width: 16rem;
+    height: 3rem;
+}
+
+.Avatar {
+    width: 1.75rem;
+    height: 1.75rem;
+    background-image: url('../../../../assets/images/icons/project\ Avatar.png');
+}
+
+.forTitle {
+    width: 14rem; 
+    height: 1.75rem;
+    margin-left: .5rem;
+}
+
+.heading1 {
+    font-size: $text18;
+    font-weight: $medium;
+    width: 12.3rem;
+    line-height: normal;
+    color: $text1;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.heading2 {
+    font-size: $text14;
+    font-weight: $medium;
+    line-height: normal;
+    color: $text3;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+// media query
+
+@media screen and (min-width: 601px) and (max-width: 1000px) {
+    .heading1 {
+        font-size: $text14;
+        font-weight: $medium;
+        line-height: normal;
+        margin: 0px;
+        padding: 0px;
+        text-wrap: wrap;
+    
+    }
+    .heading2 {
+        font-size: $text14;
+        font-weight: $regular;
+        line-height: normal;
+        margin: 0px;
+        padding: 0px;
+    
+    }
+  }
+
+  @media screen and (min-width: 1001px) and (max-width: 1200px) {
+    .heading1 {
+        font-size: $text18;
+        font-weight: $medium;
+        line-height: normal;
+        margin: 0px;
+        padding: 0px;
+        text-wrap: wrap;
+    
+    }
+    .heading2 {
+        font-size: $text14;
+        font-weight: $regular;
+        line-height: normal;
+        margin: 0px;
+        padding: 0px;
+    
+    }
+  }

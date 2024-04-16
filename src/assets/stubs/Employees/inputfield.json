@@ -1,0 +1,35 @@
+{
+    "WorkExperienceConfig": {
+    "label": "Work Experience",
+    "type": "text",
+    "placeholder": "Work Experience",
+    "required": "true",
+    "pattern": "[A-Za-z0-9 ,.#-]+",
+    "validationMessages": {
+      "required": "Please enter your Work Experience",
+      "pattern": "Invalid Work Experience format"
+    }
+  },
+  "DesignationConfig": {
+    "label": "Designation",
+    "type": "text",
+    "placeholder": "Designation",
+    "required": "true",
+    "pattern": "[A-Za-z0-9 ,.#-]+",
+    "validationMessages": {
+      "required": "Please enter your Designation",
+      "pattern": "Invalid Designation format"
+    }
+},
+"SalaryConfig": {
+    "label": "Salary",
+    "type": "text",
+    "placeholder": "Salary",
+    "required": "true",
+    "pattern": "[0-9 ,.#-]+",
+    "validationMessages": {
+      "required": "Please enter your Salary",
+      "pattern": "Invalid Salary format"
+    }
+}
+}

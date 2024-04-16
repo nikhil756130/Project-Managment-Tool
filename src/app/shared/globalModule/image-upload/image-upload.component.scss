@@ -1,0 +1,47 @@
+@import "../../../../assets/css/custom.scss";
+
+input[type="file"] {
+    display: none;
+}
+
+.profile-heading {
+    color: var(--text-color-1, $text1);
+    font-family: Source Sans Pro;
+    font-size: 1.35rem;
+    font-style: normal;
+    font-weight: $black;
+    line-height: normal;
+}
+
+.heading {
+    color: var(--text-color-1, #0F0F0F);
+    font-family: Source Sans Pro;
+    font-size: 1.35rem;
+    font-style: normal;
+    font-weight: $black;
+    line-height: normal;
+}
+
+.Upload-profile {
+    border-radius: 0.25rem;
+    border: 1px solid #C4C4C4;
+    background: #FFF;
+    width: 12.2rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-picture {
+    color: var(--text-color-1, #0F0F0F);
+    margin-left: 0.25rem;
+    font-family: Source Sans Pro;
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: $bold;
+    line-height: normal;
+    width: 152px;
+    height: 24px;
+    flex-shrink: 0;
+}

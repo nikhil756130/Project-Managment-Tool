@@ -1,0 +1,180 @@
+@import "../css/variable.scss";
+@import "../css/fonts.scss";
+@import "./components/header.scss";
+@import "./components/menu.scss";
+@import "./components/employeeDetails.scss";
+@import "./components/authentication.scss";
+@import url('https://fonts.googleapis.com/css2=family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body {
+  font-family: 'Source Code Pro', Helvetica, sans-serif !important;
+  background: $mainbg;
+  overflow-x: hidden;
+  font-size: 13px;
+}
+
+.pmbtn_primary {
+  background: $blue !important;
+  border-radius: 3px !important;
+  color: $white !important;
+  font-size: 13px !important;
+  font-weight: 300;
+
+  span.material-symbols-outlined {
+    vertical-align: text-top;
+    font-size: 16px;
+  }
+}
+
+.pmbtn_secondary {
+  border-radius: 3px !important;
+  color: $grey !important;
+  font-size: 13px !important;
+  font-weight: 400;
+
+  span.material-symbols-outlined {
+    vertical-align: text-top;
+    font-size: 16px;
+  }
+}
+
+.login-page-padding-container {
+  padding: 1rem 1rem;
+}
+
+.example-spacer {
+  flex: 1 1 auto !important;
+}
+
+.active-link{
+  border-left: 4px solid blue;
+  background-color: #F2F7FF !important;
+}
+
+@media screen and (max-width: 576px) {
+
+  .login-input-field,
+  .login-page-checkbox,
+  .account-check-container,
+  .horizontal-text-decorator {
+    width: 100%;
+  }
+
+  .box-shadow-right-side {
+    height: 100%;
+  }
+
+  .add-document-button,
+  .filter-container {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+
+  .login-input-field,
+  .login-page-checkbox,
+  .account-check-container,
+  .horizontal-text-decorator {
+    width: 100%;
+  }
+
+  .login-page-padding-container {
+    padding: 1rem 3rem;
+  }
+
+  .box-shadow-right-side {
+    height: 100%;
+  }
+
+  .add-document-button,
+  .filter-container {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+  .login-input-field,
+  .login-page-checkbox,
+  .account-check-container,
+  .horizontal-text-decorator {
+    width: 100%;
+  }
+
+  .box-shadow-right-side {
+    height: 100%;
+  }
+
+  .login-page-padding-container {
+    padding: 2rem 5rem;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+
+  .login-input-field,
+  .login-page-checkbox,
+  .account-check-container,
+  .horizontal-text-decorator {
+    width: 100%;
+  }
+
+  .login-page-padding-container {
+    padding: 2rem 6rem;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+
+  .login-input-field,
+  .login-page-checkbox,
+  .account-check-container,
+  .horizontal-text-decorator {
+    width: 100%;
+  }
+
+  .login-page-padding-container {
+    padding: 3.5rem 9rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+
+  .login-input-field,
+  .login-page-checkbox,
+  .account-check-container,
+  .horizontal-text-decorator {
+    width: 100%;
+  }
+
+  .login-page-padding-container {
+    padding: 3.5rem 9rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .projectHeaderButtons {
+    display: block !important;
+  }
+
+  .toggleProjectHeaderButtons {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .projectHeaderButtons {
+    display: none !important;
+  }
+
+  .toggleProjectHeaderButtons {
+    display: block !important;
+  }
+
+  .active-link {
+    border-left: 2px solid orange;
+    background-color: rgb(226, 226, 243);
+  }
+}

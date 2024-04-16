@@ -1,0 +1,14 @@
+<div class="row my-3 mx-1">  
+  <div class="col-1 p-0 m-0">
+    <input [(ngModel)]="isChecked" type="checkbox">
+  </div>
+  <div class="col-3 p-0 m-0">
+    {{checkboxlabel}}
+  </div>
+  <div class="col-7 p-0 m-0">
+    <app-input-field 
+    [inputConfig]="inputConfig" 
+    [formInstance]="formInstance" 
+    [controlName]="controlName">
+    </app-input-field>
+</div>

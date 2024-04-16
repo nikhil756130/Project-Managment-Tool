@@ -1,0 +1,20 @@
+<!-- Employee profile header component -->
+<div class="employee-card-header container-fluid">
+  <div class="row ms-2 d-flex">
+    <div class="col-6">
+      <img class="profile-picture" src="{{ basicDetails.profilePicture }}" alt="Profile Picture" />
+    </div>
+    <div class="col-lg-6 col-md-12 mt-2 profile-details">
+      <div class="company-name"><b>{{ basicDetails.fullName }}</b></div>
+      <div class="product">{{basicDetails.designition}}</div>
+      @if (basicDetails.employeeId) {
+      <div class="company-name"><b> {{basicDetails.employeeId}} </b></div>
+      }
+      <app-status-chip [status]="basicDetails.status"></app-status-chip>
+    </div>
+  </div>
+  <!-- Basic details text with horizontal line -->
+  <div class="employee-profile-basic-details">
+    <h3 class="horizontal-decorator-employee-profile"><b>{{keys1.basicDetails}}</b></h3>
+  </div>
+</div>

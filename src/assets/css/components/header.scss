@@ -1,0 +1,21 @@
+.pm_header_layout{
+    background: $white;
+    margin-left: 230px;
+    padding: 10px;
+    border-bottom: 1px solid $headerbg;
+    .menudropdown{
+        background: #e9e9e9;
+        min-width: 140px;
+        margin: 0px auto;
+        padding: 3px 10px;
+        border-radius: 3px;
+    }
+    .logindropdown_section{
+        line-height: 16px;
+    }
+    .project_title_count{
+        color: $black;
+        font-weight: 600;
+        line-height: 34px;
+    }
+    }

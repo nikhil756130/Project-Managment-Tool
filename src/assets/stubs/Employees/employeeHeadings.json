@@ -1,0 +1,22 @@
+{
+    "headings": [
+        {
+            "phoneNo": "Phone Number",
+            "workEmail": "Email ID",
+            "address": "Address",
+            "qualification": "Qualification",
+            "noOfProjects": "No. of Projects",
+            "joiningDate": "Joining Date",
+            "office": "Office",
+            "officeOption": "Office Option",
+            "basicDetails": "BASIC DETAILS",
+            "documents": "DOCUMENTS",
+            "attachedFile": "Attached File",
+            "chooseFile": "Choose File",
+            "toUploadOr": "to upload or",
+            "dragAndDrop": "Drag and Drop!",
+            "maximumFile": "Maximum File Size 50 MB",
+            "documentDetails": "Document Details"
+        }
+    ]
+}

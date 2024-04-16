@@ -1,0 +1,13 @@
+<span [formGroup]="formInstance">
+    <mat-form-field appearance="outline" class="login-input-field">
+        @if(inputConfig.label!==''){
+            <mat-label>{{ inputConfig.label }}</mat-label>
+        }
+        <input matInput
+         [placeholder]="inputConfig.placeholder" 
+         [required]="inputConfig.required"
+         [formControl]="controlName" 
+         value="01:00"
+         type="time" />
+    </mat-form-field>
+</span>

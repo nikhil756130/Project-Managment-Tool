@@ -1,0 +1,14 @@
+{
+    "jobdetails": [
+        {
+            "phoneNo": "9876543423",
+            "workEmail": "lucy@mail.com",
+            "address": "121, Bakers Street Sullivan, Panjim, Goa-403001",
+            "qualification": "Bachelors in Design",
+            "noOfProjects": 5,
+            "joiningDate": "3 jan 2020",
+            "office": "Hyderabad",
+            "officeOption": "Hybrid"
+        }
+    ]
+}

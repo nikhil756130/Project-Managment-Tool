@@ -1,0 +1,42 @@
+{
+    "firstName": {
+        "label": "First Name",
+        "type": "text",
+        "placeholder": "Enter text",
+        "required": "false",
+        "pattern": "",
+        "validationMessages": {
+            "required": "Please enter first name"
+        }
+    },
+    "lastName": {
+        "label": "Last Name",
+        "type": "text",
+        "placeholder": "Enter text",
+        "required": "false",
+        "pattern": "",
+        "validationMessages": {
+            "required": "Please enter last name"
+        }
+    },
+    "companyName": {
+        "label": "Company Name",
+        "type": "text",
+        "placeholder": "Enter text",
+        "required": "false",
+        "pattern": "",
+        "validationMessages": {
+            "required": "Please enter company name"
+        }
+    },
+    "password": {
+        "label": "Password",
+        "type": "text",
+        "placeholder": "Enter text",
+        "required": "false",
+        "pattern": "",
+        "validationMessages": {
+            "required": "Please enter new password"
+        }
+    }
+}

@@ -1,0 +1,20 @@
+.horizontal-text-decorator {
+    display: flex;
+    flex-direction: row;
+    min-width: fit-content;
+  }
+  
+  .horizontal-text-decorator:before {
+    content: " ";
+    border-bottom: 2px solid #E6E6E6;
+    margin: auto;
+    width: 1rem;
+  }
+  
+  .horizontal-text-decorator:after {
+    content: " ";
+    flex: 1 2;
+    border-bottom: 2px solid #E6E6E6;
+    margin: auto;
+    width: 12rem;
+  }

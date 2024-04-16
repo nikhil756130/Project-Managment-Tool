@@ -1,0 +1,20 @@
+{
+  "inputField": {
+    "budget": {
+      "label": "Budget",
+      "placeholder": "Budget",
+      "validationMessages": {
+        "required": "Budget is required",
+        "pattern": "Invalid budget format"
+      }
+    },
+    "health": {
+      "label": "Health",
+      "placeholder": "Health",
+      "validationMessages": {
+        "required": "Health is required",
+        "pattern": "Invalid Health format"
+      }
+    }
+  }
+}

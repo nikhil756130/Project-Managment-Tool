@@ -1,0 +1,39 @@
+<app-employee-title></app-employee-title>
+<div class="row m-3">
+  <div class="col-9">
+
+    <div class="bg-white ps-4 pt-2">
+      <div class="buttons-container d-flex bg-white">
+        <div class="button pb-0" (click)="showComponentBasicDetails()"
+          [ngClass]="{'active': activeTab === 'basic-details'}">
+          {{employeeInformationHeaderTabs.first_tab}}
+        </div>
+        <div class="button" (click)="showComponentJobDetails()" [ngClass]="{'active': activeTab === 'job-details'}">
+          {{ employeeInformationHeaderTabs.second_tab }}
+        </div>
+        <div class="button" (click)="showComponentProjects()" [ngClass]="{'active': activeTab === 'project-details'}">
+          {{ employeeInformationHeaderTabs.third_tab }}
+        </div>
+        <div class="button" (click)="showComponentSalary()" [ngClass]="{'active': activeTab === 'salary-details'}">
+          {{ employeeInformationHeaderTabs.fourth_tab }}
+        </div>
+        <div class="button" (click)="showComponentDocuments()" [ngClass]="{'active': activeTab === 'document-details'}">
+          {{ employeeInformationHeaderTabs.fifth_tab }}
+        </div>
+        <div class="button" (click)="showComponentLeavePlan()" [ngClass]="{'active': activeTab === 'leavePlan-details'}">
+          {{ employeeInformationHeaderTabs.sixth_tab }}
+        </div>
+      </div>
+    </div>
+    <mat-divider></mat-divider>
+
+    <div class="employeeDetailsContainer"><router-outlet></router-outlet></div>
+
+  </div>
+  <div class="col-3 employee-profilecomponent">
+    <div>
+      <app-employee-profile></app-employee-profile>
+    </div>
+  </div>
+</div>
+<!-- <app-employee-profile></app-employee-profile> -->

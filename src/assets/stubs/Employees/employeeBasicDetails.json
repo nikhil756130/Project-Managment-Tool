@@ -1,0 +1,130 @@
+{
+    "fullnameConfig": {
+        "label": "Full Name",
+        "type": "text",
+        "placeholder": "Full Name",
+        "required": "true",
+        "pattern": "^[a-zA-Z ]+$",
+        "validationMessages": {
+            "required": "Please enter your full name",
+            "pattern": "Invalid full name format "
+        }
+    },
+    "emailConfig": {
+        "label": "Email",
+        "type": "email",
+        "placeholder": "sample@jnettechnologies.com",
+        "required": "true",
+        "pattern": "^[a-zA-Z0-9._-]+@jnettechnologies+\\.[a-zA-Z]{2,4}$",
+        "validationMessages": {
+            "required": "Retry with your company email",
+            "pattern": "Invalid email format"
+        }
+    },
+    "phoneNumberConfig": {
+        "label": "Phone Number",
+        "type": "tel",
+        "placeholder": "+91-11-XXXX-XXXX",
+        "required": "true",
+        "pattern": "\\d{10}",
+        "validationMessages": {
+            "required": "Please enter your phone number",
+            "pattern": "Invalid phone number format"
+        }
+    },
+    "address1Config": {
+        "label": "Address1",
+        "type": "text",
+        "placeholder": "Address1",
+        "required": "true",
+        "pattern": "[A-Za-z0-9 ,.#-]+",
+        "validationMessages": {
+            "required": "Please enter your address",
+            "pattern": "Invalid address format"
+        }
+    },
+    "address2Config": {
+        "label": "Address2",
+        "type": "text",
+        "placeholder": "Address2",
+        "required": "true",
+        "pattern": "[A-Za-z0-9 ,.#-]+",
+        "validationMessages": {
+            "required": "Please enter your address",
+            "pattern": "Invalid address format"
+        }
+    },
+    "countryConfig": {
+        "label": "Country",
+        "type": "text",
+        "placeholder": "Country",
+        "required": "true",
+        "pattern": "[A-Za-z0-9 ,.#-]+",
+        "validationMessages": {
+            "required": "Please enter your country",
+            "pattern": "Invalid country format"
+        }
+    },
+    "cityConfig": {
+        "label": "City",
+        "type": "text",
+        "placeholder": "City",
+        "required": "true",
+        "pattern": "[A-Za-z0-9 ,.#-]+",
+        "validationMessages": {
+            "required": "Please enter your city",
+            "pattern": "Invalid city format"
+        }
+    },
+    "stateConfig": {
+        "label": "State",
+        "type": "text",
+        "placeholder": "State",
+        "required": "true",
+        "pattern": "[A-Za-z0-9 ,.#-]+",
+        "validationMessages": {
+            "required": "Please enter your state",
+            "pattern": "Invalid state format"
+        }
+    },
+    "zipcodeConfig": {
+        "label": "Zipcode",
+        "type": "tel",
+        "placeholder": "Zipcode",
+        "required": "true",
+        "pattern": "\\d{6}",
+        "validationMessages": {
+            "required": "Please enter your zipcode",
+            "pattern": "Invalid zipcode format"
+        }
+    },
+    "relationshipConfig": {
+        "label": "Relationship",
+        "type": "text",
+        "placeholder": "Relationship",
+        "required": "true",
+        "pattern": "^[a-zA-Z ]+$",
+        "validationMessages": {
+            "required": "Please enter your full relationship",
+            "pattern": "Invalid relationship format"
+        }
+    },
+    "gender": {
+        "dropdownList": [
+            {
+                "name": "Female",
+                "value": "female"
+            },
+            {
+                "name": "Male",
+                "value": "male"
+            }
+        ],
+        "placeholder": "Gender"
+    },
+    "personalinformation": "Personal Information",
+    "address": "Address",
+    "emergencycontact": "Emergency Contact",
+    "basicdetails": "BASIC DETAILS",
+    "profilepicture": "Profile Picture"
+}

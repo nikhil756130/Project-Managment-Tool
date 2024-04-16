@@ -1,0 +1,10 @@
+{
+    "employeeInformationHeadertabs": {
+        "first_tab": "Basic Details",
+        "second_tab": "Job Details",
+        "third_tab": "Projects",
+        "fourth_tab": "Salary",
+        "fifth_tab": "Documents",
+        "sixth_tab":"Leave Plan"
+    }
+}

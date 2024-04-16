@@ -1,0 +1,38 @@
+.pm_menu_bg{
+    height: 100%;
+    position: absolute;
+    width: 230px;
+    background: $white !important;
+    border-right: 1px solid #f2f2f2;
+    } 
+    .pro_menu_manager{
+    .active{
+        background: $liteBlue !important;
+        color: $blue !important;
+        font-weight: 500 !important;
+    }
+    .nav-link{
+        padding: 15.5px 25px !important;
+        span{
+            font-size: 16px;
+            vertical-align: text-top;
+        }
+    }
+    }
+    
+    .proLogo{
+        color: $blue;
+        font-weight: 600;
+        font-size: 18px;
+    }
+    
+    .mangerLogo{
+        color:$orange;
+        font-weight: 600;
+        font-size: 18px;
+    }
+    
+    .promanager_logo{
+        padding-left: 25px;
+    }
+    

@@ -1,0 +1,39 @@
+<div class="">
+  <span class="example-spacer"></span>
+  <app-app-overlay-title [overlayTitle]="overlayTitle"></app-app-overlay-title>
+
+  <div class="horizontal-text-decorator">
+    <div class="left-side">
+      <mat-nav-list class="add-employee-sidenav">
+        <a mat-list-item class="sidenav-content spaced-item" [class.selected]="selectedComponent === 'basicdetails'"
+          (click)="selectComponent('basicdetails')">{{employeeOverlayTabsJson.first_tab}}</a>
+        <a mat-list-item class="sidenav-content spaced-item" [class.selected]="selectedComponent === 'jobdetails'"
+          (click)="selectComponent('jobdetails')">{{ employeeOverlayTabsJson.second_tab }}</a>
+        <a mat-list-item class="sidenav-content spaced-item" [class.selected]="selectedComponent === 'projects'"
+          (click)="selectComponent('projects')">{{ employeeOverlayTabsJson.third_tab }}</a>
+        <a mat-list-item class="sidenav-content spaced-item" [class.selected]="selectedComponent === 'salary'"
+          (click)="selectComponent('salary')">{{ employeeOverlayTabsJson.fourth_tab }}</a>
+        <a mat-list-item class="sidenav-content spaced-item" [class.selected]="selectedComponent === 'documents'"
+          (click)="selectComponent('documents')">{{ employeeOverlayTabsJson.fifth_tab }}</a>
+        <a mat-list-item class="sidenav-content spaced-item" [class.selected]="selectedComponent === 'leaveplan'"
+          (click)="selectComponent('leaveplan')">{{ employeeOverlayTabsJson.sixth_tab }}</a>
+      </mat-nav-list>
+    </div>
+
+
+    <div class="right-side">
+      <app-app-employee-basic-details *ngIf="componentSelected === 'basicdetails'"></app-app-employee-basic-details>
+      <app-add-employee-job-details *ngIf="componentSelected === 'jobdetails'"></app-add-employee-job-details>
+      <app-add-emp-project-form *ngIf="componentSelected === 'projects'"></app-add-emp-project-form>
+      <app-employee-salary-form *ngIf="componentSelected === 'salary'"></app-employee-salary-form>
+      <app-employee-add-documentsoverlay *ngIf="componentSelected === 'documents'"></app-employee-add-documentsoverlay>
+      <app-scheduler *ngIf="componentSelected === 'leaveplan'"></app-scheduler>
+    </div>
+  </div>
+
+
+<div class="d-grid gap-2 d-md-flex justify-content-md-end basic-details-button pt-3 pe-3">
+  <button type="button" class="btn btn-outline-primary">Cancel</button>
+  <button type="submit" class="btn btn-primary">Add Employee</button>
+</div>
+</div>

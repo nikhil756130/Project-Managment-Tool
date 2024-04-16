@@ -1,0 +1,25 @@
+@mixin text-dynamic($textType) {
+    @if ($textType =="heading") {
+        line-height: normal;
+        font-weight: 600 !important;
+        color: #000; 
+    }
+}
+
+.col.heading {
+    $heading:"heading";
+    @include text-dynamic($heading);
+    padding: 0% 0%;
+}
+.col
+{
+    $text:"text";
+    @include text-dynamic($text);
+    font-weight: 600 !important;
+
+    padding: 0% 0%;
+}
+img
+{
+    margin-right: 2%;
+}

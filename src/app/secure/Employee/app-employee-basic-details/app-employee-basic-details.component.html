@@ -1,0 +1,86 @@
+<form>
+  <div class="mx-2">
+    <!-- Personal Information -->
+    <div mat-dialog-title class="ps-3"><b>{{ basicDetails }}</b></div>
+
+    <!-- horizontal line with text -->
+    <app-horizontal-text-decorator [text]="personalInformation" class="mt-2"></app-horizontal-text-decorator>
+
+    <div class="text-area-container mx-2">
+      <!-- Full Name & Profile Picture -->
+      <app-input-field class="input-field custom-input me-3" [inputConfig]="fullnameInput" [formInstance]="employeeForm"
+        controlName="fullName"></app-input-field>
+
+      <label for="fileInput" class="mt-4 ">{{profilePicture}}</label>
+      <input type="file" id="fileInput" #fileInput class="upload-button" (change)="onFileSelected($event)" />
+      <span class="spacing"></span> <button mat-raised-button color="primary" (click)="fileInput.click()" class="">
+        Choose Image
+      </button>
+      {{ selectedFileName }}
+    </div>
+
+    <!-- Email and Phone Number -->
+    <div class="d-flex pt-2 pb-2 mx-2 mt-2 mb-3">
+      <app-input-field class="input-field me-3" [inputConfig]="emailInput" [formInstance]="employeeForm"
+        controlName="email"></app-input-field>
+      <app-input-field class="input-field" [inputConfig]="phoneNumber" [formInstance]="employeeForm"
+        controlName="phoneNumber"></app-input-field>
+    </div>
+
+    <!-- Gender and Date of Birth -->
+    <div class="d-flex pt-2 pb-2 mx-2 mb-3 mt-2">
+      <div class="col-6 me-2 pe-2">
+        <app-dropdown formControlName="gender" [dropdownList]="gender.dropdownList" [placeholder]="gender.placeholder"
+          class="input-field "></app-dropdown>
+      </div>
+      <div class="col-6 pe-2">
+        <app-date-picker [calenderName]="'Date of Birth'"></app-date-picker>
+      </div>
+    </div>
+
+    <!-- horizontal line with text -->
+    <app-horizontal-text-decorator [text]="basicDetailsaddress" class="mt-4"></app-horizontal-text-decorator>
+
+    <!-- Address -->
+    <div class="mx-2 mb-4">
+      <app-input-field [inputConfig]="firstAddressInput" [formInstance]="employeeForm"
+        controlName="address1"></app-input-field>
+    </div>
+
+    <div class="mx-2">
+      <app-input-field [inputConfig]="secondAddressInput" [formInstance]="employeeForm"
+        controlName="address2"></app-input-field>
+    </div>
+
+    <div class="d-flex pt-2 pb-2 mx-2 mt-4 mb-3">
+      <app-input-field class="input-field me-3" [inputConfig]="countryInput" [formInstance]="employeeForm"
+        controlName="country"></app-input-field>
+      <app-input-field class="input-field" [inputConfig]="cityInput" [formInstance]="employeeForm"
+        controlName="city"></app-input-field>
+    </div>
+
+    <div class="d-flex pt-2 pb-2 mx-2 mt-2 mb-3">
+      <app-input-field class="input-field me-3" [inputConfig]="stateInput" [formInstance]="employeeForm"
+        controlName="state"></app-input-field>
+      <app-input-field class="input-field" [inputConfig]="zipcodeInput" [formInstance]="employeeForm"
+        controlName="zipcode"></app-input-field>
+    </div>
+
+    <!-- horizontal line with text -->
+    <app-horizontal-text-decorator [text]="emergencyContact" class="mt-5 mb-2"></app-horizontal-text-decorator>
+
+    <!-- Emergency Contact -->
+    <div class="d-flex pb-2 mx-2">
+      <app-input-field class="input-field me-3" [inputConfig]="fullnameInput" [formInstance]="employeeForm"
+        controlName="emergencyFullname"></app-input-field>
+      <app-input-field class="input-field" [inputConfig]="relationshipInput" [formInstance]="employeeForm"
+        controlName="emergencyRelationship"></app-input-field>
+    </div>
+
+    <div class="ms-2 mt-3 mb-3 w-50 pt-2 pe-3 pb-4">
+      <app-input-field [inputConfig]="phoneNumber" [formInstance]="employeeForm"
+        controlName="emergencyPhoneNumber"></app-input-field>
+    </div>
+  </div>
+
+</form>

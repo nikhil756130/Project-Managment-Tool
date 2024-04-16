@@ -1,0 +1,5 @@
+<!-- text-with-image-upload.component.html -->
+<label for="fileInput">{{ labelText }}</label>
+<input type="file" id="fileInput" #fileInput class="hidden-input" (change)="onFileSelected($event)" />
+<span class="spacing"></span>
+<button button-color (click)="openFileInput()">{{ buttonText }}</button>

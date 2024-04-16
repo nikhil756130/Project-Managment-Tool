@@ -1,0 +1,55 @@
+<div class="container-fluid bg-white">
+    <div class="row">
+        <div class="col-lg-5 col-md-12 box-shadow-right-side login-page-padding-container">
+            <!-- reusable logo-component -->
+            <app-logo class="mb-5"></app-logo>
+            <!-- singup form container -->
+            <div>
+                <!-- Part 1 -->
+                <div class="form-part" id="part1">
+                    <div class="container mt-3 pt-5">
+                        <!-- reusable progress-tab component -->
+                        <app-progress-tab [activeStep]="displayPart" [tabsCount]="tabsCount"></app-progress-tab>
+                    </div>
+                    <h2>Let's get to know you more!</h2>
+                    <app-image-upload></app-image-upload>
+                    <!-- Reusable email input field component with specified validations and disable state -->
+                    <div class="row">
+                        <app-email-field [inputConfig]="emailConfig" [formInstance]="registrationForm1"
+                            controlName="email" [disabled]="true" class="mb-4"></app-email-field>
+                    </div>
+                    <div class="row">
+                        <!-- First name input field component with specified validations and form binding -->
+                        <div class="col-6">
+                            <app-label-input-field [inputConfig]="textConfig" [formInstance]="registrationForm1"
+                                controlName="firstName" label="First Name"></app-label-input-field>
+                        </div>
+                        <!-- Last name input field component with specified validations and form binding -->
+                        <div class="col-6">
+                            <app-label-input-field [inputConfig]="textConfig" [formInstance]="registrationForm1"
+                                controlName="lastName" label="Last Name"></app-label-input-field>
+                        </div>
+                    </div>
+                    <!-- Company name input field component with specified validations and form binding -->
+                    <div class="row my-4">
+                        <app-label-input-field [inputConfig]="textConfig" [formInstance]="registrationForm1"
+                            controlName="companyName" label="Company Name"></app-label-input-field>
+                    </div>
+                    <!-- Reusable password input field component with specified validations and form binding -->
+                    <div class="row my-4">
+                        <app-password-field [inputConfig]="passwordConfig" [formInstance]="registrationForm1"
+                            controlName="newPassword"></app-password-field>
+                    </div>
+                    <button type="button" class="social-media-button1 login-input-field continue-button"
+                        (click)="showPart()">
+                        Continue
+                        <img src="../../assets/images/Icons/vector.png" alt="vector_Image" class="ms-2" />
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-7 col-md-12 login-page-padding-container login-right-content d-flex align-items-center">
+            <div class="row"></div>
+        </div>
+    </div>
+</div>

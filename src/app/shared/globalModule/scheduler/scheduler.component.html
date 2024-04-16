@@ -1,0 +1,39 @@
+<!-- Leave Plan Title -->
+<h2 class="ms-3"><b>{{schedulerData.leavePlanName}}</b></h2>
+
+<!-- Upload Leave plan Box -->
+<div class="uploadleavePlanBox ms-3">
+    <span id="uploadLeavePlanText">{{schedulerData.uploadButtonText}}</span>
+    <input type="file" id="fileInput" #fileInput style="display: none" (change)="onFileSelected($event)" />
+
+    <!-- Leave Plan Button -->
+    <button mat-raised-button color="primary" (click)="fileInput.click()" class="float-end mt-2 me-2">
+        {{schedulerData.uploadButtonName}}
+    </button>
+</div>
+
+
+<!-- Or text -->
+<div class="my-3 ms-3">
+    <h3 class="horizontal-text-decorator">Or</h3>
+</div>
+
+<!-- Scheduler Part -->
+<dx-scheduler currentView="month" class="Scheduler ms-3 me-3">
+
+    <!-- Day View -->
+    <dxi-view type="day" [startDayHour]="10" [endDayHour]="22">
+    </dxi-view>
+
+    <!-- Week View -->
+    <dxi-view type="week" [startDayHour]="10" [endDayHour]="22">
+    </dxi-view>
+
+    <!-- Month view -->
+    <dxi-view type="month"></dxi-view>
+    
+
+    <!-- Dragging value will be changed later according project requirement -->
+    <dxo-editing [allowDragging]="true">
+    </dxo-editing>
+</dx-scheduler>

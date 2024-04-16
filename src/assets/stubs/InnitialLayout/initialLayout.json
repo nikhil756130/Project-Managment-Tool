@@ -1,0 +1,67 @@
+[
+  {
+    "name": "Dashboard",
+    "icon": "/assets/images/navbar_images/Dashboard.png",
+    "url": "/secure/dashboard"
+  },
+  {
+    "name": "Projects",
+    "icon": "/assets/images/navbar_images/Projects.png",
+    "url": "/secure/projects"
+  },
+  {
+    "name": "Work Items",
+    "icon": "/assets/images/navbar_images/Workitems.png",
+    "url": "/secure/workitems"
+  },
+  {
+    "name": "Employees",
+    "icon": "/assets/images/navbar_images/Employees.png",
+    "url": "/secure/employees/all"
+  },
+  {
+    "name": "Customers",
+    "icon": "/assets/images/navbar_images/Customers.png",
+    "url": "/secure/customers"
+  },
+  {
+    "name": "Timesheets",
+    "icon": "/assets/images/navbar_images/Timesheets.png",
+    "url": "/secure/timesheets"
+  },
+  {
+    "name": "Inbox",
+    "icon": "/assets/images/navbar_images/Inbox.png",
+    "url": "/secure/inbox"
+  },
+  {
+    "name": "File Manager",
+    "icon": "/assets/images/navbar_images/Filemanager.png",
+    "url": "/secure/filemanager"
+  },
+  {
+    "name": "Reports & Analytics",
+    "icon": "/assets/images/navbar_images/Reports.png",
+    "url": "/secure/reports"
+  },
+  {
+    "name": "User Management",
+    "icon": "/assets/images/navbar_images/User-settings.png",
+    "url": "/secure/usermanagement"
+  },
+  {
+    "name": "Tickets",
+    "icon": "/assets/images/navbar_images/Tickets.png",
+    "url": "/secure/tickets"
+  },
+  {
+    "name": "Meetings",
+    "icon": "/assets/images/navbar_images/Meetings.png",
+    "url": "/secure/meetings"
+  },
+  {
+    "name": "Settings",
+    "icon": "/assets/images/navbar_images/Settings.png",
+    "url": "/secure/settings"
+  }
+]

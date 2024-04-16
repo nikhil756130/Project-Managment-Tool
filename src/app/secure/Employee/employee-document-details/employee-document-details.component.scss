@@ -1,0 +1,23 @@
+.horizontal-text-decorator {
+    display: flex;
+    flex-direction: row;
+}
+
+.horizontal-text-decorator:before {
+    content: " ";
+    border-bottom: 1px solid #E6E6E6;
+    margin: auto;
+    width: 13px;
+}
+
+.horizontal-text-decorator:after {
+    content: " ";
+    flex: 1 1;
+    border-bottom: 1px solid #E6E6E6;
+    margin: auto;
+    width: 5rem ;
+}
+
+.inputField{
+    width: 100%;
+}

@@ -1,0 +1,30 @@
+@import "../../../../assets/css/custom.scss";
+
+
+.container {
+    width: 9rem;
+    padding: 0px;
+    margin: 0px;
+}
+
+.progress{
+    background-color: $background-color;
+}
+.progressStatus {
+    font-size: $text14;
+    font-weight: $bold;
+}
+
+.progressValue {
+    margin-left: auto;
+    font-size: $text14;
+    font-weight: $bold;
+}
+
+.mat-progress-bar-fill {
+    width: 9rem;
+    height: .25rem;
+    border-radius: $text18;
+    margin-top: $text14;
+    --mdc-linear-progress-active-indicator-color: #09A57E;
+}

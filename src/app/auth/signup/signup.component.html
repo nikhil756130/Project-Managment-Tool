@@ -1,0 +1,49 @@
+<div class="container-fluid bg-white">
+  <div class="row">
+    <div class="col-lg-5 col-md-12 box-shadow-right-side login-page-padding-container">
+      <!-- uploads logo -->
+      <app-logo></app-logo>
+      <div class="pt-4 mt-4">
+        <h3 class="fw-bold fs-5">{{ formLabels.signUp }}</h3>
+        <!-- Reusable email input field component with specified validations and form binding -->
+        <app-email-field [inputConfig]="emailConfig" [formInstance]="emailForm" controlName="email"
+          class="mb-4"></app-email-field>
+        <button id="button" type="button" class="social-media-button login-input-field facebook-button mt-4"
+          (click)="onSubmit()" [disabled]="!emailForm.get('email')?.valid"
+          [ngStyle]="{ opacity: !emailForm.get('email')?.valid ? 0.5 : 1 }">
+          {{ formLabels.signUp }}
+        </button>
+        <div class="account-check-container">
+          <span class="me-2">{{ formLabels.haveAccount }}</span>
+          <a (click)="onClickLogin()" class="text-decoration-none cusrsorChange">{{ formLabels.loginIn }}</a>
+        </div>
+        <div class="my-3">
+          <h3 class="horizontal-text-decorator">Or</h3>
+        </div>
+      </div>
+      <button type="button" class="social-media-button login-input-field google-button" (click)="onGoogleSignInClick()">
+        <img src="../../assets/images/logos/googleImage.png" alt="Google Image" class="me-3" />
+        {{ formLabels.singInGoogle }}
+      </button>
+      <div>
+        <button type="button" class="social-media-button login-input-field facebook-button"
+          (click)="onFacebookSignInClick()">
+          <img src="../../assets/images/logos/facebookImage.png" alt="Facebook Image" class="me-3" />
+          {{ formLabels.signInFacebook }}
+        </button>
+      </div>
+    </div>
+    <div class="col-lg-7 col-md-12 login-page-padding-container login-right-content d-flex align-items-center">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>{{ welcomeMessage.heading }}</h1>
+          <h3>{{ welcomeMessage.subHeading }}</h3>
+          <p>{{ welcomeMessage.message1 }}</p>
+          <hr />
+          <p>{{ welcomeMessage.message2 }}</p>
+          <h2>{{ welcomeMessage.message3 }}</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

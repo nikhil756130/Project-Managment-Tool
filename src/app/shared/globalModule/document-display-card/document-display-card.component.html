@@ -1,0 +1,20 @@
+<!-- Uploaded documents to display -->
+<mat-card class="document-file mt-2">
+    <div class="d-flex align-items-center my-auto">
+        <div class="w-100 text-start d-flex align-items-center">
+            <img height="30px" width="30px" [src]="imageSource" class="ms-1">
+            <span>{{ text}}</span>
+            <span class="example-spacer"></span>
+            <mat-icon [matMenuTriggerFor]="actionMenu" class="me-2">more_horiz</mat-icon>
+            <!-- Dropdown menu for Edit and Delete -->
+            <mat-menu #actionMenu="matMenu">
+                <button mat-menu-item>
+                    <mat-icon>edit</mat-icon>Edit
+                </button>
+                <button mat-menu-item>
+                    <mat-icon>delete</mat-icon>Delete
+                </button>
+            </mat-menu>
+        </div>
+    </div>
+</mat-card>

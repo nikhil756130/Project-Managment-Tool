@@ -1,0 +1,54 @@
+.example-spacer{
+  flex: 1 1 auto;
+}
+
+.add-employee-sidenav {
+  background-color: #F9FBFF;
+  border: 1px solid #F2F2F2;
+  height: 100%;
+  border-top: 1px solid #F6F6F6 !important;
+  border-right: 1px solid #F6F6F6 !important;
+}
+
+.sidenav-content {
+  cursor: pointer;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.sidenav-content.spaced-item {
+  padding-left: 30px;
+  margin-bottom: 10px;
+}
+
+.horizontal-text-decorator {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.right-side {
+  border-top: 2px solid #F6F6F6;
+  border-bottom: 2px solid #F6F6F6;
+  width: 75% !important;
+  min-height: 100vh !important;
+  // overflow-y: hidden !important;
+}
+
+.left-side {
+  width: 254px !important;
+  height: auto !important;
+}
+
+
+.close-button {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  cursor: pointer !important; 
+}
+
+.close-button mat-icon {
+  color: #000; 
+}
+

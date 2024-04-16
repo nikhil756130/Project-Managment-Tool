@@ -1,0 +1,11 @@
+{
+    "employees":[
+        {
+             "fullName":"Lucy Hales",
+             "profilePicture":"/assets/images/EmployeeImages/employee_profile.jpg",
+             "designition":"UI/UX Designer",
+             "employeeId":2085,
+             "status":"Active"
+         }
+     ] 
+}

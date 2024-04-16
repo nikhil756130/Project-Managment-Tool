@@ -1,0 +1,125 @@
+{
+    "textConfig": {
+        "label": "Enter City",
+        "type": "text",
+        "placeholder": "Enter text",
+        "required": "false",
+        "pattern": "",
+        "validationMessages": {
+            "required": "Please enter city name"
+        }
+    },
+    "emailConfig": {
+        "label": "Email ID",
+        "type": "email",
+        "placeholder": "sample@jnettechnologies.com",
+        "required": "true",
+        "pattern": "^[a-zA-Z0-9._-]+@jnettechnologies+\\.[a-zA-Z]{2,4}$",
+        "validationMessages": {
+            "required": "Please retry with your company email",
+            "pattern": "Invalid email format"
+        }
+    },
+    "passwordConfig": {
+        "label": "Password",
+        "type": "password",
+        "placeholder": "Enter your password",
+        "required": "true",
+        "pattern": "^(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%&*])(?=.*\\d).{9,}$",
+        "validationMessages": {
+            "required": "Password is required",
+            "pattern": "Invalid Password"
+        }
+    },
+    "newPasswordConfig": {
+        "label": "New Password",
+        "type": "password",
+        "placeholder": "New Password",
+        "required": "true",
+        "pattern": "^(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%&*])(?=.*\\d).{9,}$",
+        "validationMessages": {
+            "required": "Password is required",
+            "pattern": "Invalid Password"
+        }
+    },
+    "resetPasswordConfig": {
+        "label": "Confirm Password",
+        "type": "password",
+        "placeholder": "Re-enter New Password",
+        "required": "true",
+        "pattern": "^(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%&*])(?=.*\\d).{9,}$",
+        "validationMessages": {
+            "required": "Confirm Your Password",
+            "pattern": "Invalid Password Pattern"
+        }
+    },
+    "firstName": {
+        "label": "First Name",
+        "type": "text",
+        "placeholder": "Enter text",
+        "required": "false",
+        "pattern": "",
+        "validationMessages": {
+            "required": "Please enter first name"
+        }
+    },
+    "lastName": {
+        "label": "Last Name",
+        "type": "text",
+        "placeholder": "Enter text",
+        "required": "false",
+        "pattern": "",
+        "validationMessages": {
+            "required": "Please enter last name"
+        }
+    },
+    "companyName": {
+        "label": "Company Name",
+        "type": "text",
+        "placeholder": "Enter text",
+        "required": "false",
+        "pattern": "",
+        "validationMessages": {
+            "required": "Please enter company name"
+        }
+    },
+    "password": {
+        "label": "Password",
+        "type": "text",
+        "placeholder": "Enter text",
+        "required": "false",
+        "pattern": "",
+        "validationMessages": {
+            "required": "Please enter new password"
+        }
+    },
+    "workspaceName": {
+        "label": "Workspace Name",
+        "type": "text",
+        "placeholder": "Enter text",
+        "required": "false",
+        "pattern": "",
+        "validationMessages": {
+            "required": "Please enter workspace name"
+        }
+    },
+    "signUpFormLabels": {
+        "signUp": "Sign Up",
+        "loginIn": "Login",
+        "checkYourInbox": "Check your Inbox",
+        "rememberMe":"Remember me",
+        "checkingMessage":"Checking.....",
+        "forgotPassword": "Forgot Password",
+        "resetPassword": "Reset Password",
+        "submit":"Submit",
+        "reset":"Reset",
+        "cancel":"Cancel",
+        "checkInboxMessage": "We've just emailed you a temporary password. Please enter it below.",
+        "forgotPassswordMessage": "Enter the email address associated with your account. We will email you a link to reset your password.",
+        "resetPassswordMessage": "Enter your new password",
+        "haveAccount": "Already have an account?",
+        "noAccount": "Don't have an account?",
+        "singInGoogle": "Sign In With Google",
+        "signInFacebook": "Sign In With Facebook"
+    }
+}

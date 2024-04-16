@@ -1,0 +1,70 @@
+<div class="container-fluid form-projectTable">
+    <div>
+        <!-- for project table heading -->
+        <p class="projectsHeading">{{details.projectInput.projectHeading}}</p>
+    </div>
+    <app-add-emp-project-table></app-add-emp-project-table>
+
+</div>
+<div class="container-fluid">
+    <!-- for project form heading -->
+    <p class="formHeading">{{details.projectInput.projectFormHeading}} </p>
+    <form>
+        <div class="input-field">
+            <input type="text" formControlName="projectName" [placeholder]="details.projectInput.name" required>
+            <textarea  class="textarea" formControlName="projectDescription" required
+                [placeholder]="details.projectInput.description">
+            </textarea>
+
+            <!-- Choose Image -->
+                <div class="d-flex border">                    
+                    <label for="fileInput" class="avatarTitle">{{details.projectInput.avatar}} </label>
+                    <input type="file" class="fileInput" #fileInput (change)="onFileSelected($event)" />
+                   <button class="chooseImage" (click)="fileInput.click()" >
+                      Choose Image
+                   </button>
+                   
+                  </div>
+
+            <div class="d-flex mt-3">
+                <app-date-picker [calenderName]="details.projectInput.startDate" class="input-field"> </app-date-picker>
+                <app-date-picker [calenderName]="details.projectInput.endDate" class="input-field"></app-date-picker>
+                <app-dropdown [placeholder]="details.projectInput.type" [dropdownList]="projectType"
+                    class="input-field"></app-dropdown>
+            </div>
+
+            <div class="d-flex border">
+                <!-- Manager List -->
+                <app-dropdown [placeholder]="details.projectInput.manager" [dropdownList]="managerList"
+                    class="input-field">
+                </app-dropdown>
+                <!-- Project Health -->
+                <app-input-field [inputConfig]="inputHealthData" class="input-field"></app-input-field>
+                <!-- Project status -->
+                <app-dropdown [placeholder]="details.projectInput.status" [dropdownList]="statusList"
+                    class="input-field"></app-dropdown>
+            </div>
+
+            <div class="d-flex">
+                <!-- project Budget -->
+                <app-input-field [inputConfig]="inputBudgetData" class="input-field"></app-input-field>
+
+                <!-- Customer List -->
+                <app-dropdown [placeholder]="details.projectInput.customer" [dropdownList]="customerList"
+                    class="input-field"></app-dropdown>
+                <div></div>
+            </div>
+            <!-- clear and save button -->
+            <div class="mb-1 d-flex">
+                <span class="example-spacer"></span>
+                <div class="clearSaveProject">
+                    <button mat-stroked-button class="clearButton">Clear</button>
+                    <button mat-flat-button type="submit" class="saveProjectButton" (click)="onSaveProject()">Save
+                        Project</button>
+                </div>
+            </div>
+            <mat-divider></mat-divider>
+
+        </div>
+    </form>
+</div>

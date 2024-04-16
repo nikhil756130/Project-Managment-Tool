@@ -1,0 +1,52 @@
+@import "../../../../assets/css/custom.scss";
+
+
+// PROJECT DETAILS COMPONENT
+.projectDetailsHeader {
+    // border: 1px solid $text9;
+    padding-bottom: 10px !important;
+    // background-color: $background-color !important;
+}
+
+.projectTitle {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    /* color: $text1 !important;
+    font-size: $text18 !important; */
+    font-weight: 600 !important;
+}
+
+.projectSubTitle {
+    color: $text3 !important;
+    font-size: 12px !important;
+    font-weight: 400;
+    display: flex !important;
+    align-items: center !important;
+}
+
+.sidenavTabName {
+    text-decoration: underline;
+}
+
+//new
+
+.edit-button {
+    background-color: $positive-25 !important;
+    border: 2px solid $positive-75 !important;
+    font-size: $text16;
+    font-weight: $bold;
+    color: $secondary !important;
+}
+
+.delete-button {
+    background-color: $negative-50 !important;
+    border: 2px solid $negative-25 !important;
+    font-size: $text16;
+    font-weight: $bold;
+    color: $negative !important;
+}
+
+.projectHeaderImage {
+    height: 16px;
+}

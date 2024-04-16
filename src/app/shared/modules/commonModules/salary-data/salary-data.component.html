@@ -1,0 +1,26 @@
+<div class="row">
+    <div class="col-8">
+        <div class="row p-1 m-1">
+            <!-- image with content Intership details -->
+            <app-image-with-text class="Job-type py-1 mt-1" imageSource="/assets/images/Icons/flagimage.png" text="Internship"
+                textType="heading"></app-image-with-text>
+        </div>
+
+        <div class="row p-1 m-1">
+            <app-label-and-value class="label-value" [label]="keys.WorkExperience"
+                [value]="salarydetails.WorkExperience"></app-label-and-value>
+        </div>
+        <div class="row p-1 m-1">
+            <app-label-and-value class="label-value" [label]="keys.Desigination"
+                [value]="salarydetails.Desigination"></app-label-and-value>
+        </div>
+        <div class="row p-1 m-1">
+            <app-label-and-value class="label-value" [label]="keys.JoiningDate"
+                [value]="salarydetails.JoiningDate"></app-label-and-value>
+        </div>
+        <div class="row p-1 m-1">
+            <app-label-and-value class="label-value" [label]="keys.Salary"
+                [value]="salarydetails.salary"></app-label-and-value>
+        </div>
+    </div>
+</div>

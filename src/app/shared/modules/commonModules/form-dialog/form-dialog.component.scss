@@ -1,0 +1,75 @@
+
+.horizontal-text-decorator {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Source Sans Pro';
+
+}
+
+.horizontal-text-decorator:before {
+  content: " ";
+  border-bottom: 2px solid #E6E6E6;
+  margin: auto;
+  width: 1rem;
+}
+
+.horizontal-text-decorator:after {
+  content: " ";
+  flex: 1 2;
+  border-bottom: 2px solid #E6E6E6;
+  margin: auto;
+  width: 12rem;
+}
+
+// .formButton {
+//   display: flex;
+//   justify-content: flex-end;
+// }
+
+// .form-container {
+//   margin-top: 10px;
+// }
+
+.clear-button {
+  color: var(--Secondary-secondary-500, #007ACC);
+  font-family: 'Source Sans Pro';
+  font-size: 18px;
+  font-style: normal;
+  letter-spacing: 0px;
+  font-weight: 600;
+  line-height: normal;
+  float: right;
+  margin: 50px 0px 100px 0px ;
+}
+
+.save-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 4px;
+  background:#007ACC !important;
+  color: #FFF !important;
+  font-family: 'Source Sans Pro';
+  letter-spacing: 0px;
+  font-size: 18px;
+  float: right;
+  margin: 50px 10px 100px 0px ;
+}
+
+.work-experience,
+.Desigination,
+.salary,
+.JoiningDate,
+.jobtype {
+  color: var(--text-color-1, #0F0F0F);
+  font-family: "Source Sans Pro";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.row {
+  --bs-gutter-x: 0rem !important;
+}

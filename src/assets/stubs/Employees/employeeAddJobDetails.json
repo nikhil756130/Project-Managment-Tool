@@ -1,0 +1,269 @@
+{
+    "userName": {
+        "label": "User name",
+        "type": "text",
+        "placeholder": "Enter user name",
+        "required": "false",
+        "pattern": "",
+        "validationMessages": {
+            "required": "Please Enter user name"
+        }
+    },
+    "employeeID": {
+        "label": "Employee ID",
+        "type": "text",
+        "placeholder": "Enter Employee ID",
+        "required": "false",
+        "pattern": "",
+        "validationMessages": {
+            "required": "Please Enter Employee ID"
+        }
+    },
+    "WorkExperience": {
+        "label": "Work Experience",
+        "type": "text",
+        "placeholder": "Enter Work Experience",
+        "required": "false",
+        "pattern": "",
+        "validationMessages": {
+            "required": "Please Enter Work Experience"
+        }
+    },
+    "WorkEmail": {
+        "label": "Work Email ID",
+        "placeholder": "sample@jnettechnologies.com",
+        "required": true,
+        "pattern": "^[a-zA-Z0-9._-]+@jnettechnologies+\\.[a-zA-Z]{2,4}$",
+        "validationMessages": {
+            "required": "Please retry with your company email",
+            "pattern": "Invalid email format"
+        }
+    },
+    "department": {
+        "dropdownList": [
+            {
+                "name": "Front End Development",
+                "value": "frontEndDevelopment"
+            },
+            {
+                "name": "Back End Development",
+                "value": "backEndDevelopment"
+            },
+            {
+                "name": "Testing",
+                "value": "testing"
+            }
+        ],
+        "placeholder": "Department"
+    },
+    "designation": {
+        "dropdownList": [
+            {
+                "name": "Software Engineer",
+                "value": "softwareEngineer"
+            },
+            {
+                "name": "Senior Software Engineer",
+                "value": "seniorSoftwareEngineer"
+            },
+            {
+                "name": "Lead Software Engineer",
+                "value": "leadSoftwareEngineer"
+            },
+            {
+                "name": "Engineering Manager",
+                "value": "engineeringManager"
+            },
+            {
+                "name": "QA Engineer",
+                "value": "qaEngineer"
+            },
+            {
+                "name": "Test Automation Engineer",
+                "value": "testAutomationEngineer"
+            },
+            {
+                "name": "SDET",
+                "value": "sdet"
+            }
+        ],
+        "placeholder": "Designation"
+    },
+    "role": {
+        "dropdownList": [
+            {
+                "name": "Front End Developer",
+                "value": "frontEndDeveloper"
+            },
+            {
+                "name": "Back End Developer",
+                "value": "backEndDeveloper"
+            },
+            {
+                "name": "Full Stack Developer",
+                "value": "fullStackDeveloper"
+            },
+            {
+                "name": "DevOps Engineer",
+                "value": "devopsEngineer"
+            },
+            {
+                "name": "QA Engineer",
+                "value": "qaEngineer"
+            },
+            {
+                "name": "Test Automation Engineer",
+                "value": "testAutomationEngineer"
+            },
+            {
+                "name": "SDET",
+                "value": "sdet"
+            },
+            {
+                "name": "Product Manager",
+                "value": "productManager"
+            },
+            {
+                "name": "Project Manager",
+                "value": "projectManager"
+            },
+            {
+                "name": "Business Analyst",
+                "value": "businessAnalyst"
+            },
+            {
+                "name": "UX Designer",
+                "value": "uxDesigner"
+            }
+        ],
+        "placeholder": "Role"
+    },
+
+    
+    "result": {
+        "label": "Result",
+        "type": "text",  
+        "placeholder": "",  
+        "required": "false",  
+        "pattern": "",
+        "validationMessages": {}  
+    },
+    "comments": {
+        "label": "Comments",
+        "type": "text",  
+        "placeholder": "Enter any  comments",
+        "required": "false",
+        "pattern": "",
+        "validationMessages": {}
+    },
+       
+
+
+
+    "jobTitle": {
+        "label": "Job Title",
+        "type": "text",
+        "placeholder": "Enter Job Title",
+        "required": "true",
+        "pattern": "",
+        "validationMessages": {
+          "required": "Please Enter Job Title"
+        }
+      },
+      "office": {
+        "label": "Office",
+        "type": "text",
+        "placeholder": "Enter Office Location",
+        "required": "true",
+        "pattern": "",  
+        "validationMessages": {
+          "required": "Please Enter Office Location"
+        }
+       },
+       "manager": {
+        "label": "Manager",
+        "type": "text",
+        "placeholder": "Enter Manager's Name",
+        "required": "false",
+        "pattern": "", 
+        "validationMessages": {
+          "required": "Please Enter Manager's Name"
+        }
+      },
+      "employmentType": {
+        "dropdownList": [
+          { "name": "Full Time", "value": "fullTime" },
+          { "name": "Part Time", "value": "partTime" },
+          { "name": "Contractor", "value": "contractor" },
+          { "name": "Intern", "value": "intern" },
+          { "name": "Temporary", "value": "temporary" }
+        ],
+        "placeholder": "Employment Type"
+      },
+      
+      
+       
+      "standardWorkHours": {
+        "label": "Standard Work Hours",
+        "type": "text",  
+        "placeholder": "e.g., 8h 00m",
+        "required": "true",
+        "pattern": "",  
+        "validationMessages": {
+          "required": "Please Enter Standard Work Hours",
+          "pattern": "Please enter hours and minutes in the format '8h 00m'"
+        }
+       },
+       "totalWorkHours": {
+        "label": "Total Work Hours",
+        "type": "text",  
+        "placeholder": "e.g., 40h 30m",
+        "required": "true",
+        "pattern": "",  
+        "validationMessages": {
+          "required": "Please Enter Total Work Hours",
+          "pattern": "Please enter hours and minutes in the format '40h 30m'"
+        }
+       },
+       "currentSchedule": {
+        "label": "Current Schedule",
+        "type": "dropdownList",  
+        "dropdownList": [
+          { "name": "Regular", "value": "regular" },
+          { "name": "Shift", "value": "shift" },
+          { "name": "Flexible", "value": "flexible" },
+          { "name": "Remote", "value": "remote" },
+          { "name": "Other", "value": "other" }
+        ],
+        "placeholder": "Current Schedule"
+       },
+       "scheduleType": {
+        "label": "Schedule Type",
+        "type": "dropdownList", 
+        "dropdownList": [
+          { "name": "Fixed", "value": "fixed" },
+          { "name": "Rotating", "value": "rotating" },
+          { "name": "On-Call", "value": "onCall" },
+          { "name": "Hybrid", "value": "hybrid" },
+          { "name": "Other", "value": "other" }
+        ],
+        "placeholder": "Schedule Type"
+       },
+
+       "timePicker": {
+        "label": "Time",
+        "type": "time",  
+        "placeholder": "e.g., 08:00",  
+        "required": true,
+        "validationMessages": {
+          "required": "Please Enter Standard Work Hours",
+          "format": "Please enter time in 24-hour format (HH:MM)" 
+        }
+      }
+      
+       
+       
+       
+       
+
+}

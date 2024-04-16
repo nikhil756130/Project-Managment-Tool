@@ -1,0 +1,116 @@
+{
+    "empolyeeInformation":
+    {
+            "username": "skoda12",
+            "employeeId": 2085,
+            "workExperience": "4 years 6 months",
+            "workEmail": "lucyhales@mail.com",
+            "department": "Design",
+            "designation": "UI/UX Designer",
+            "joiningDate": "3 Jan 2020",
+            "role": "UI/UX Designer",
+            "iesAccessToken": "N/A",
+            "tfsusername": "N/A"
+    },
+
+    "employeeCardInfo":
+    {
+        "image":
+        {
+            "src":"../../../../assets/images/Icons/contactProfileImage.png"
+        },
+        "label": "Employee Information"
+    },
+
+    "prohibitionDetails":
+    {
+        "startDate":"23-2-2020",
+        "endDate":"23-5-2026",
+        "evaluationDate":"26-2-2020",
+        "result":"-",
+        "comments":"-",
+        "projectManager":"Lucy Hales"
+    },
+
+    "workSchedule":
+    {
+        "dailyWorkingHours":[
+            {"id":0,"day":"Monday   ", "timing":"8h 00m" },
+            {"id":1,"day":"Tuesday  ", "timing":"8h 00m" },
+            {"id":2,"day":"Wednesday", "timing":"8h 00m" },
+            {"id":3,"day":"Thursday ", "timing":"8h 00m" },
+            {"id":4,"day":"Friday   ", "timing":"8h 00m" },
+            {"id":5,"day":"Saturday ", "timing":"(non - working day)"},
+            {"id":5,"day":"Sunday   ", "timing":"(non - working day)"}
+        ],
+        "currentSchedule":"Mon - Fri, Duration 40 hours/week",
+        "scheduleType":"Duration based",
+        "StandardWorkingHoursPerDay":"8h 00m",
+        "totalWorkingHoursPerMonth":"40h 00m"
+    },
+
+    "JobTimeline":
+    {
+        "heading":{
+                    "jobTitle":"Job Title", 
+                    "employeeType":"Employee Type", 
+                    "department":"Department", 
+                    "manager":"Manager",
+                    "office":"Office",
+                    "duration":"Duration",
+                    "action":"Action"
+                
+        },
+        "tempHeadings":{
+            "labels":[
+                {"label":"Job Title" },
+                {"label":"Employee Type"},
+                {"label":"Department"},
+                {"label":"Job Title"},
+                {"label":"Manager"},
+                {"label":"Office"},
+                {"label":"Duration"}
+            ]
+        },
+        "dataSource": 
+        [
+            { "jobTitle": 1, "department": "development" , "employeeType": "Full time", "manager": "baskar", "office": "Jnet", "duration": "23-1-2024" },
+            { "jobTitle": 2, "department": "development" , "employeeType": "Intern ", "manager": "baskar", "office": "Jnet", "duration": "23-1-2024" }
+        ],
+        "values":[
+            {
+                "jobTitle":"Job Title", 
+                "employeeType":"Employee Type", 
+                "department":"Department", 
+                "manager":"Manager",
+                "Office":"Office",
+                "duration":"Duration"
+            },
+            {
+                "jobTitle":"Job Title", 
+                "employeeType":"Employee Type", 
+                "department":"Department", 
+                "manager":"Manager",
+                "Office":"Office",
+                "duration":"Duration"
+            },
+            {
+                "jobTitle":"Job Title", 
+                "employeeType":"Employee Type", 
+                "department":"Department", 
+                "manager":"Manager",
+                "Office":"Office",
+                "duration":"Duration"
+            },
+            {
+                "jobTitle":"Job Title", 
+                "employeeType":"Employee Type", 
+                "department":"Department", 
+                "manager":"Manager",
+                "Office":"Office",
+                "duration":"Duration"
+            }
+        ]
+    }
+     
+}

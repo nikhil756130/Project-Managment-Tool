@@ -1,0 +1,62 @@
+<div class="container-fluid bg-white">
+  <div class="row">
+    <div class="col-lg-5 col-md-12 box-shadow-right-side login-page-padding-container">
+      <!-- reusable logo-component -->
+      <app-logo></app-logo>
+      <div class="pt-4 mt-4">
+        <h3 class="fw-bold fs-5">{{ signUpPageLabels.checkYourInbox }}</h3>
+        <h3 class="login-checkinbox-message">
+          {{ signUpPageLabels.checkInboxMessage }}
+        </h3>
+        <div class="mb-4">
+          <!-- Reusable email input field component with specified validations and disable state -->
+          <app-email-field [inputConfig]="emailConfig" [formInstance]="passwordForm" controlName="email"
+            [disabled]="true" class="mb-4"></app-email-field>
+        </div>
+        <div>
+          <!-- Reusable password input field component with specified validations and form binding -->
+          <app-password-field [inputConfig]="passwordConfig" [formInstance]="passwordForm"
+            controlName="password"></app-password-field>
+        </div>
+        <div>
+          <button type="button" [disabled]="!passwordForm.get('password')?.valid" [ngStyle]="{
+              opacity: !passwordForm.get('password')?.valid ? 0.5 : 1
+            }" (click)="onSubmitLogin()" class="facebook-button login-input-field social-media-button mt-4">
+            {{ signUpPageLabels.loginIn }}
+          </button>
+        </div>
+        <div class="account-check-container">
+          <span class="me-2">{{ signUpPageLabels.noAccount }}</span>
+          <a (click)="onClickLogin()" class="text-decoration-none cusrsorChange">{{ signUpPageLabels.signUp }}</a>
+        </div>
+        <div class="my-3">
+          <h3 class="horizontal-text-decorator">Or</h3>
+        </div>
+      </div>
+      <button type="button" class="social-media-button login-input-field google-button" (click)="onGoogleSignInClick()">
+        <img src="../../assets/images/logos/googleImage.png" alt="Google Image" class="me-3" />
+        {{ signUpPageLabels.singInGoogle }}
+      </button>
+      <div>
+        <button type="button" class="social-media-button login-input-field facebook-button"
+          (click)="onFacebookSignInClick()">
+          <img src="../../assets/images/logos/facebookImage.png" alt="Facebook Image" class="me-3" />
+          {{ signUpPageLabels.signInFacebook }}
+        </button>
+      </div>
+    </div>
+    <div class="col-lg-7 col-md-12 login-page-padding-container login-right-content d-flex align-items-center">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>{{ sideDescription.header }}</h1>
+          <h3>{{ sideDescription.subtitle }}</h3>
+          <p>{{ sideDescription.msg1 }}</p>
+          <p>{{ sideDescription.msg2 }}</p>
+          <h4>{{ sideDescription.msg3 }}</h4>
+          <p>{{ sideDescription.msg4 }}</p>
+          <p>{{ sideDescription.msg5 }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

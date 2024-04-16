@@ -1,0 +1,17 @@
+<div class="row p-1 mb-3 mx-1 jobTimeline">
+    <!-- heading and edit button -->
+    <div class="row py-1 my-1 pt-3">
+        <div class="col ms-3">
+            <app-image-with-text imageSource="../../../../assets/images/Icons/Time.png" text="Job Timeline"
+                textType="heading"></app-image-with-text>
+        </div>
+        <div class="col-2 p-0 m-0 d-flex justify-content-end">
+            <button type="button" class="btn btn-white editButton">
+                <img src="../../../../assets/images/Icons/edit.png" height="18px" width="18px">Edit
+            </button>
+        </div>
+    </div>
+    <div class="row">
+        <app-material-table [columnLabels]="heading"></app-material-table>
+    </div>
+</div>

@@ -1,0 +1,30 @@
+@import '../../../../../assets/css/custom.scss';
+
+.employee-card-body {
+  border: 1px solid beige;
+  border-radius: 0px 0px;
+  border-top: 0px;
+  margin-top: 0px;
+  height: 100vh;
+  background-color: $white;
+}
+
+.keyvalue {
+  padding-top: 10px;
+  margin-right: 0px;
+}
+
+.sub-heading {
+  font: size 14px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/* Medium devices (laptops) */
+@media only screen and (max-width: 540px) {
+ .keyvalue{
+  font-size: x-small;
+ }
+}

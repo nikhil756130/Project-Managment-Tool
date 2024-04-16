@@ -1,0 +1,28 @@
+@import "../../../assets/css/custom.scss";
+
+.passwordInput{
+    margin: 0px 0px 40px 0px;
+}
+
+.rememberMeCheckboxLabel{
+    font-weight: $medium;
+    font-size: $text18;
+    color: $gray2;
+}
+
+input.rememberMeCheckbox {
+    width: 24px;
+    height: 24px;
+}
+
+.loaderButton{
+    display: flex;
+    align-items: center;
+}
+
+.loaderImage{
+    background: url('/assets/images/Icons/loaderSpinner.png');
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+}

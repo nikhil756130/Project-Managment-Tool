@@ -1,0 +1,58 @@
+<form [formGroup]="employeeSalaryForm">
+    <div class="row mt-3">
+        <!-- Add Salary heading -->
+        <h3 class="horizontal-text-decorator"><b>{{salaryFormHeading}}</b></h3>
+
+        <div class="row mt-2">
+            <div class="col-6 p-2">
+                <!-- dropdown for Job type -->
+                <app-dropdown placeholder="Job Type" class="jobtype" [dropdownList]="dropDownList"></app-dropdown>
+            </div>
+            <!-- Input-Field for workExperience -->
+            <div class="col-6 p-2">
+                <app-input-field class="work-experience" [inputConfig]="workExperience"
+                    [formInstance]="employeeSalaryForm" controlName="Workexperience"></app-input-field>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <!-- Input-Field for Desigination -->
+        <div class="col-6 p-2">
+            <app-input-field class="Desigination" [inputConfig]="Designation" [formInstance]="employeeSalaryForm"
+                controlName="Designation"></app-input-field>
+        </div>
+
+        <div class="col-6 p-2">
+            <!-- Date picker for Joining Date -->
+            <app-date-picker class="JoiningDate" [calenderName]="calendar.details.calendarName"></app-date-picker>
+        </div>
+    </div>
+
+    <div class="row mt-3">
+        <div class="col-6 p-2">
+            <!-- Input-Field for Salary -->
+            <app-input-field class="salary" [inputConfig]="Salary" [formInstance]="employeeSalaryForm"
+                controlName="Salary"></app-input-field>
+        </div>
+        <div class="col-6">
+        </div>
+    </div>
+</form>
+
+
+<!-- buttons -->
+<div class="row">
+
+    <div class="col-12">
+        <div class="col-4"></div>
+        <div class="col-4"></div>
+        <div class="row formButton justify-content-end">
+            <div class="col-2">
+                <button mat-button class="clear-button" alt="button" (click)="clearForm()">Clear</button>
+            </div>
+            <div class="col-2">
+                <button mat-button class="save-button" alt="button" (click)="saveSalary()">Save Salary</button>
+            </div>
+        </div>
+    </div>
+</div>

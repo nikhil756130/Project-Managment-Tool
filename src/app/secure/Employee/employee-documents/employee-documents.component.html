@@ -1,0 +1,33 @@
+<!-- Displaying the documents in the form of table by using material table-->
+<mat-card-content>
+  <table matSort mat-table [dataSource]="files">
+    <ng-container matColumnDef="File Name">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription='Sort by name'>File Name</th>
+      <td mat-cell *matCellDef="let element">
+        <app-text-picture [text]="element.file.name" [imageUrl]="element.image"></app-text-picture>
+      </td>
+    </ng-container>
+    <ng-container matColumnDef="Date">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by date">Date</th>
+      <td mat-cell *matCellDef="let element">{{ element.date }}</td>
+    </ng-container>
+    <ng-container matColumnDef="Action" >
+      <th mat-header-cell *matHeaderCellDef class="actions">Actions</th>
+      <td mat-cell *matCellDef="let element" class="actions-items">
+        <mat-icon (click)="showActions(element)" [matMenuTriggerFor]="actionMenu"
+          >more_vert</mat-icon>
+        <!-- Dropdown menu for Edit and Delete -->
+        <mat-menu #actionMenu="matMenu">
+          <button mat-menu-item (click)="editItem(element)">
+            <mat-icon>edit</mat-icon>Edit
+          </button>
+          <button mat-menu-item (click)="deleteItem(element)">
+            <mat-icon>delete</mat-icon>Delete
+          </button>
+        </mat-menu>
+      </td>
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+  </table>
+</mat-card-content>

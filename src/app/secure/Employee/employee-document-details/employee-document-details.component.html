@@ -1,0 +1,9 @@
+<!-- Document details text with horizontal line -->
+<div>
+    <h3 class="mt-3 horizontal-text-decorator"><b>{{heading1.documentDetails}}</b></h3>
+</div>
+<!--Name inputs for document uploaded by user and date input for reference purpose -->
+<div class="d-flex mx-3">
+    <app-input-field class="inputField me-2" [inputConfig]="nameConfig" [formInstance]="documentForm" controlName="name"></app-input-field>
+    <app-date-picker class="inputField" [calenderName]="'Date Created'"></app-date-picker>
+</div>

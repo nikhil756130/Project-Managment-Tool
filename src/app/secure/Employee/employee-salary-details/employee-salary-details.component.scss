@@ -1,0 +1,35 @@
+.label-value {
+    margin: 0;
+    padding: 0;
+}
+
+.salary {
+    font-size: 32px;
+    font-family: "Source Sans Pro";
+}
+
+.text-muted {
+    font-size: 14px;
+    font-family: "Source Sans Pro";
+}
+
+.Internship,
+.fullTime,
+.annualAppraisal {
+    color: var #0F0F0F;
+    font-family: "Source Sans Pro";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+
+.vertical-line {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    border-left: 1px solid #014EBA;
+    margin: 0% 0% 0% 15%;
+}

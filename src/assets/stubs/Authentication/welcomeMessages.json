@@ -1,0 +1,18 @@
+{
+    "signupWelcomeMessage": {
+        "heading": "It looks like you’ve tried to signup with a public web email",
+        "subHeading": "Enter Your Company Email for Enhanced Collaboration",
+        "message1": "ProManage is designed to work at it’s best when it’s connected to your company email. We believe in fostering effective collaboration within teams, and one way to achieve this is by using your company email.",
+        "message2": "Unable to use your company email?",
+        "message3": "Talk to our Support Team"
+    },
+    "message": {
+        "header": "Welcome to ProManage",
+        "subtitle": "The Ultimate Project Management Tool",
+        "msg1": "ProManage is built with the modern project manager in mind. Our user-friendly interface and powerful features empower you to effortlessly manage projects of any size, from start to finish. Say goodbye toscattered emails, confusing spreadsheets, and endless meetings.",
+        "msg2": "With ProManage, you'll have everything you need in one centralized platform.",
+        "msg3": "Start Managing Projects Like a Pro",
+        "msg4": "Sign up for ProManage today and revolutioize the way you plan,execute, and deliver projects.",
+        "msg5": "Let's begin"
+    }
+}

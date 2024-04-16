@@ -1,0 +1,46 @@
+
+.employeeInformationForm,
+.employeeJobTimeline,
+.employeeProbation{
+    padding-bottom: 5%;
+}
+
+.horizontal-text-decorator {
+    margin-bottom: 0%;
+    display: flex;
+    flex-direction: row;
+    min-width: fit-content;
+    color:  #0F0F0F;
+    font-family: "Source Sans Pro";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .horizontal-text-decorator:before {
+    content: " ";
+    border-bottom: 2px solid #E6E6E6;
+    margin: auto;
+    width: 1rem;
+  }
+  .horizontal-text-decorator:after {
+    content: " ";
+    flex: 1 2;
+    border-bottom: 2px solid #E6E6E6;
+    margin: auto;
+    width:12rem;
+}
+.heading{
+  color: #0F0F0F;
+  font-family: "Source Sans Pro";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding-left: 4%;
+  padding-bottom: 4%;
+  padding-top: 4%;
+}
+.inputRow{
+  padding-bottom: 5%;
+}

@@ -1,0 +1,24 @@
+<table>
+    <!-- table heading row -->
+    <tr>
+        <div class="row p-0 m-0 tableHeader">
+            @for(headingElement of headings;track headingElement){
+                <div class="col">
+                    <th>{{headingElement}}</th>
+                </div>
+            }
+        </div>
+    </tr>
+    <!-- table value row's -->
+    @for(rowElement of data;track rowElement){
+        <tr>
+            <div class="row p-0 m-0 tableData">
+                @for(columnElement of rowElement;track columnElement){
+                    <div class="col">
+                        <td>{{columnElement}}</td>
+                    </div>
+                }
+            </div> 
+        </tr>
+    }
+</table>

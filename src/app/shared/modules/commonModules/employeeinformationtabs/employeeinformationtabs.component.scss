@@ -1,0 +1,51 @@
+.button {
+    margin-right: 25px; /* Adjust the margin-right value as needed */
+  }
+  /* Add hover effect for all buttons */
+/* Add hover effect for text only */
+.button:hover {
+  color:  #014EBA; /* Change to the desired blue color */
+}
+
+/* Add active state for the clicked button */
+.button.active {
+  color:  #014EBA; /* Change to the desired blue color */
+}
+
+/* Add blue line inside each button when clicked */
+.button.active::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.bg-white .buttons-container {
+  display: flex;
+}
+
+.bg-white .button {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 2px solid transparent; /* Initial border color */
+}
+
+.bg-white .button.active {
+  border-color: #014EBA; /* Active section border color */
+}
+
+
+.row{
+  --bs-gutter-x: 0rem !important;
+}
+.button.active {
+  border-bottom: 2px solid blue;
+}
+
+.employeeDetailsContainer{
+  margin-top: 0;
+  background-color: #FBFCFD;;
+}

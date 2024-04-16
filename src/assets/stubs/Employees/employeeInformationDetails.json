@@ -1,0 +1,173 @@
+{
+    "employees": [
+        {
+            "id": "1",
+            "employee_name": "John Doe",
+            "designation": "Senior Engineer",
+            "department": "Engineering",
+            "no_of_projects": 5,
+            "emailid": "john@example.com",
+            "joining_date": "2022-01-15",
+            "status": "Active",
+            "action": "Review",
+            "profile_picture": "../../../../../assets/images/profile_images/userprofile.png"
+            
+        },
+        {
+            "id": "2",
+            "employee_name": "Alice Smith",
+            "designation": "Manager",
+            "department": "Operations",
+            "no_of_projects": 3,
+            "emailid": "alice@example.com",
+            "joining_date": "2021-09-20",
+            "status": "Active",
+            "action": "Update",
+            "profile_picture": "../../../../../assets/images/profile_images/managerProfileImage.png"
+        },
+        {
+            "id": "3",
+            "employee_name": "Bob Johnson",
+            "designation": "Analyst",
+            "department": "Finance",
+            "no_of_projects": 2,
+            "emailid": "bob@example.com",
+            "joining_date": "2023-03-10",
+            "status": "Inactive",
+            "action": "Remove",
+            "profile_picture": "../../../../../assets/images/profile_images/managerProfileImage.png"
+        },
+        {
+            "id": "4",
+            "employee_name": "Emily Brown",
+            "designation": "Software Developer",
+            "department": "IT",
+            "no_of_projects": 4,
+            "emailid": "emily@example.com",
+            "joining_date": "2022-11-25",
+            "status": "Active",
+            "action": "Review",
+            "profile_picture": "../../../../../assets/images/profile_images/managerProfileImage.png"
+        },
+        {
+            "id": "5",
+            "employee_name": "Michael Johnson",
+            "designation": "HR Manager",
+            "department": "Human Resources",
+            "no_of_projects": 6,
+            "emailid": "michael@example.com",
+            "joining_date": "2021-08-10",
+            "status": "Active",
+            "action": "Update",
+            "profile_picture": "../../../../../assets/images/profile_images/managerProfileImage.png"
+        },
+        {
+            "id": "6",
+            "employee_name": "Sophia Garcia",
+            "designation": "Marketing Specialist",
+            "department": "Marketing",
+            "no_of_projects": 3,
+            "emailid": "sophia@example.com",
+            "joining_date": "2023-02-18",
+            "status": "Active",
+            "action": "Review",
+            "profile_picture": "../../../../../assets/images/profile_images/managerProfileImage.png"
+        },
+        {
+            "id": "7",
+            "employee_name": "Daniel Lee",
+            "designation": "Financial Analyst",
+            "department": "Finance",
+            "no_of_projects": 5,
+            "emailid": "daniel@example.com",
+            "joining_date": "2022-04-30",
+            "status": "Active",
+            "action": "Review",
+            "profile_picture": "../../../../../assets/images/profile_images/managerProfileImage.png"
+        },
+        {
+            "id": "8",
+            "employee_name": "Olivia Wilson",
+            "designation": "Operations Manager",
+            "department": "Operations",
+            "no_of_projects": 4,
+            "emailid": "olivia@example.com",
+            "joining_date": "2021-12-15",
+            "status": "Active",
+            "action": "Update",
+            "profile_picture": "../../../../../assets/images/profile_images/managerProfileImage.png"
+        },
+        {
+            "id": "9",
+            "employee_name": "Ethan Martinez",
+            "designation": "System Administrator",
+            "department": "IT",
+            "no_of_projects": 3,
+            "emailid": "ethan@example.com",
+            "joining_date": "2022-06-05",
+            "status": "Active",
+            "action": "Review",
+            "profile_picture": "../../../../../assets/images/profile_images/managerProfileImage.png"
+        },
+        {
+            "id": "10",
+            "employee_name": "Ava Clark",
+            "designation": "Business Analyst",
+            "department": "Business Development",
+            "no_of_projects": 2,
+            "emailid": "ava@example.com",
+            "joining_date": "2023-01-20",
+            "status": "Inactive",
+            "action": "Remove",
+            "profile_picture": "../../../../../assets/images/profile_images/managerProfileImage.png"
+        },
+        {
+            "id": "11",
+            "employee_name": "James Baker",
+            "designation": "Senior Engineer",
+            "department": "Engineering",
+            "no_of_projects": 7,
+            "emailid": "james@example.com",
+            "joining_date": "2022-09-12",
+            "status": "Active",
+            "action": "Review",
+            "profile_picture": "../../../../../assets/images/profile_images/managerProfileImage.png"
+        },
+        {
+            "id": "12",
+            "employee_name": "Isabella Wright",
+            "designation": "Project Manager",
+            "department": "Project Management",
+            "no_of_projects": 5,
+            "emailid": "isabella@example.com",
+            "joining_date": "2021-07-08",
+            "status": "Active",
+            "action": "Update",
+            "profile_picture": "../../../../../assets/images/profile_images/managerProfileImage.png"
+        },
+        {
+            "id": "13",
+            "employee_name": "Noah Hill",
+            "designation": "Data Analyst",
+            "department": "Data Science",
+            "no_of_projects": 4,
+            "emailid": "noah@example.com",
+            "joining_date": "2022-02-28",
+            "status": "Active",
+            "action": "Review",
+            "profile_picture": "../../../../../assets/images/profile_images/managerProfileImage.png"
+        },
+        {
+            "id": "14",
+            "employee_name": "Mia Adams",
+            "designation": "Sales Representative",
+            "department": "Sales",
+            "no_of_projects": 3,
+            "emailid": "mia@example.com",
+            "joining_date": "2023-05-14",
+            "status": "Active",
+            "action": "Review",
+            "profile_picture": "../../../../../assets/images/profile_images/managerProfileImage.png"
+        }
+    ]
+}

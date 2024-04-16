@@ -1,0 +1,108 @@
+@import '../variable.scss';
+@import '../fonts.scss';
+
+//SIDE NAVBAR AND TOP NAVBAR COMPONENTS
+.sidenav-container {
+    height: 100vh;
+    width: 100%;
+  }
+  
+  .sidenav .mat-toolbar {
+    background: inherit;
+  }
+  
+  .mat-toolbar.mat-primary {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  
+  #pro,
+  #manage {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  
+  #pro {
+    margin-left: 16px;
+    color: $primary-500;
+  }
+  
+  #manage {
+    color: $accent2-400 ;
+  }
+  
+  .navbar {
+    width: 1917px;
+    height: 70px !important;
+    flex-shrink: 0;
+    background: #FFFFFF !important;
+    border-bottom: 1px solid #F1F1F1;
+  }
+  
+  .sidenav {
+    width: 288px;
+    height: 100vh;
+  }
+  
+  .sidenav-content {
+    height: 49px !important;
+    font-size: $text18;
+    font-weight: $regular;
+  }
+  
+  .sidenav-content img {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    margin-left: 16px;
+    margin-right: 10px !important;
+  }
+  
+  
+  .nav-profile-card {
+    width: 262px;
+    height: 56px;
+    flex-shrink: 0;
+    justify-content: center;
+    float: right !important;
+    background-color: $lineDivider !important;
+    border-radius: 4px;
+    border: 1px solid #E9E9E9;
+    background: #EFF0F1;
+  }
+  
+  .nav-profile-card-spacer {
+    flex: 1 1 auto;
+  }
+  
+  .nav-profile-picture {
+    background-image: url(assets/images/profile_images/userprofile.png);
+    background-size: cover;
+  }
+  
+  .nav-profile-name {
+    color: var(--text-color-1, #0F0F0F);
+    font-family: $app-font;
+    font-size: $text18;
+    font-style: normal;
+    font-weight: $bold;
+    line-height: normal;
+  }
+  
+  .nav-profile-designation {
+    font-size: $text14;
+    font-weight: $regular;
+    margin-bottom: 20px;
+  }
+  
+  .nav-profile-dropdown {
+    margin-left: 30px;
+  }
+  
+  .toolbar-elements {
+    height: 52px !important;
+  }

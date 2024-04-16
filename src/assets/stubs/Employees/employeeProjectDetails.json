@@ -1,0 +1,59 @@
+{
+  "employeeProjectDetails": [
+    {
+      "projectTitle": "Project Management Tool",
+      "projectSubTitle": "Saas Product",
+      "projectAvatar": "../../../assets/images/Icons/project Avatar.png",
+      "projectId": "#101",
+      "projectStartdate": "2024-01-19",
+      "projectEnddate": "13 Feb 23",
+      "projectManager": "Christian Bale",
+      "managerProfilePic": "../assets/images/profileImage.jpg",
+      "status": "completed"
+    },
+    {
+      "projectTitle": "Project Management Tool",
+      "projectSubTitle": "Saas Product",
+      "projectAvatar": "../../../assets/images/Icons/project Avatar.png",
+      "projectId": "#102",
+      "projectStartdate": "2024-01-19",
+      "projectEnddate": "13 Feb 23",
+      "projectManager": "Christian Bale",
+      "managerProfilePic": "../assets/images/profileImage.jpg",
+      "status": "completed"
+    },
+    {
+      "projectTitle": "Project Management Tool",
+      "projectSubTitle": "Saas Product",
+      "projectAvatar": "../../../assets/images/Icons/project Avatar.png",
+      "projectId": "#103",
+      "projectStartdate": "2024-01-19",
+      "projectEnddate": "13 Feb 23",
+      "projectManager": "Christian Bale",
+      "managerProfilePic": "../assets/images/profileImage.jpg",
+      "status": "completed"
+    },
+    {
+      "projectTitle": "Project Management Tool",
+      "projectSubTitle": "Saas Product",
+      "projectAvatar": "../../../assets/images/Icons/project Avatar.png",
+      "projectId": "#104",
+      "projectStartdate": "2024-01-19",
+      "projectEnddate": "13 Feb 23",
+      "projectManager": "Christian Bale",
+      "managerProfilePic": "../assets/images/profileImage.jpg",
+      "status": "completed"
+    },
+    {
+      "projectTitle": "Project Management Tool",
+      "projectSubTitle": "Saas Product",
+      "projectAvatar": "../../../assets/images/Icons/project Avatar.png",
+      "projectId": "#105",
+      "projectStartdate": "2024-01-19",
+      "projectEnddate": "13 Feb 23",
+      "projectManager": "Christian Bale",
+      "managerProfilePic": "../assets/images/profileImage.jpg",
+      "status": "completed"
+    }
+  ]
+}

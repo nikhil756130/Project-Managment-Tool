@@ -1,0 +1,125 @@
+/* Table Header Styles */
+table th {
+    background-color: #f6f6f6;
+    color: #444;
+}
+/* Custom Form Field Styles */
+.my-custom-form-field {
+    width: 344px;
+    height: 56px;
+    flex-shrink: 0;
+    background-color: white; 
+    border-radius: 4px;
+    border: 1px solid #E0E0E0;
+    background: #FFF;
+  }
+/* Custom Input Styles */
+  .my-custom-input {
+    padding-left: 32px; 
+  }
+  /* Custom Icon Styles */
+  .my-custom-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  /* Inside Search Navbar Styles */
+  .insidesearchnavbar {
+    display: flex;
+    background-color: white;
+    gap:  1.25rem;
+    margin-left: auto;
+  }
+  /* Filter Styles */
+  .filter {
+    display: flex;
+    background-color: #FFFFFF;
+    width: 6.6875rem;
+    height: 3rem;
+    border-radius: 4px;
+    border: 1px solid #E0E0E0;
+  }
+/* Filter Text Styles */
+  .filtertext {
+    width: 2.4375rem;
+    height: 1.625rem;
+    font-family: Source Sans Pro;
+    font-weight: 400;
+    font-size:  1.125rem;
+    line-height: normal;
+    color: #444444;
+    padding-left: 0.9375rem;
+   
+  }
+  /* Sort By Styles */
+  .shortby {
+    display: flex;
+    background-color: #FFFFFF;
+    align-items: center;
+    border-radius: 4px;
+    border: 1px solid #E0E0E0;
+    width: 153px;
+    height: 48px;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  /* Header Icons Styles */
+  .headericons {
+    color: #666666;
+  }
+
+/* Sort By Text Styles */
+  .Sortbytext {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: normal;
+    color: #444444;
+  }
+  /* Arrow Down Icon Styles */
+  .keyboard_arrow_down {
+    align-items: center;
+  }
+  /* Flex Spacer Styles */
+  .flex-spacer {
+    flex: 1 1 auto;
+  }
+ /* Employee Container Styles */
+  .employee-container a {
+    color: #0147A9;
+    text-decoration: none;
+    border-bottom: 1px solid blue; 
+  }
+  /* Employee Container Hover Styles */
+  .employee-container a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+/* Active Background Styles */
+.active-bg {
+  background-color: #EAFFFA;
+  color: green; 
+  display: inline-block; 
+  padding: 5px 10px; 
+  border-radius: 5px;
+}
+
+/* Add styles for inactive background */
+.inactive-bg {
+  background-color: #faf3f3;
+  color: red;
+  display: inline-block;
+  padding: 5px 10px; 
+  border-radius: 5px;
+}
+.pt-3 {
+  padding-top: 0rem !important;
+}
+.menuIcon
+{
+  cursor: pointer;
+}
+
+ 
+  

@@ -1,0 +1,7 @@
+<span [formGroup]="formInstance">
+    <mat-form-field appearance="outline" class="login-input-field">
+        <mat-label *ngIf="label!==''">{{ label }}</mat-label>
+        <input matInput [placeholder]="inputConfig.placeholder" [required]="inputConfig.required"
+            [formControlName]="controlName" [type]="inputConfig.type" />
+    </mat-form-field>
+</span>

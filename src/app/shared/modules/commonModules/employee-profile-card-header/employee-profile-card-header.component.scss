@@ -1,0 +1,124 @@
+@import '../../../../../assets/css/custom.scss';
+
+.employee-card-header {
+  display: flex;
+  flex-direction: column;
+  border-radius: 0px 0px;
+  width: auto;
+  margin-bottom: 0%;
+  height: 100%;
+  border: 1px solid beige;
+  border-bottom: 0px;
+  background-color: $white;
+}
+
+.profile-details {
+  margin-left: -10px;
+}
+
+.container-fluid {
+  --bs-gutter-x: 0rem !important;
+}
+
+.row {
+  --bs-gutter-x: 0rem !important;
+}
+
+.card-body {
+  display: flex;
+  align-items: center;
+}
+
+.profile-picture {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+
+.company-name {
+  font-size: 15px;
+  padding: 3px;
+}
+
+.product {
+  font-weight: 60;
+  font-size: 15px;
+}
+
+.side-bar {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.details-heading {
+  font-size: small;
+}
+
+.sub-heading {
+  margin-top: 5px;
+}
+
+.horizontal-decorator-employee-profile {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.horizontal-decorator-employee-profile:before {
+  content: " ";
+  border-bottom: 2px solid #E6E6E6;
+  margin: auto;
+  width: 1rem;
+}
+
+.horizontal-decorator-employee-profile:after {
+  content: " ";
+  flex: 1 2;
+  border-bottom: 2px solid #E6E6E6;
+  margin: auto;
+  width: 12rem;
+}
+
+.employee-profile-basic-details {
+  margin-top: 20px;
+}
+
+.mat-mdc-card-content:first-child {
+  padding-top: 0px
+}
+
+/* Small devices (tablets) */
+@media only screen and (min-width: 370px) and (max-width: 572px) {
+  .horizontal-decorator-employee-profile {
+    font-size: x-small;
+  }
+}
+
+/* Medium devices (laptops) */
+@media only screen  and (max-width: 540px) {
+  .profile-picture {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    margin-top: 10px;
+  }
+  .profile-details {
+    font-size: x-small;
+  }
+}
+
+/* Large devices (desktops) */
+@media only screen and (max-width: 880px) {
+  .profile-picture {
+    display: block;
+  }
+
+  .profile-details {
+    display: block;
+  }
+}

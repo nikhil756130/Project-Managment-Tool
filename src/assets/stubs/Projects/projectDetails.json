@@ -1,0 +1,19 @@
+{
+    "projectDetails": {
+        "projectInput": {
+            "projectHeading": "PROJECTS",
+            "projectFormHeading": "Add Project",
+            "name": "Project Name",
+            "description": "Project Description",
+            "avatar": "Project Avatar",
+            "startDate": "Project Start Date",
+            "endDate": "Project End Date",
+            "type": "Project Type",
+            "health": "Project Health",
+            "manager": "Project Manager",
+            "status": "Project Status",
+            "budget": "Budget",
+            "customer": "Customer"
+        }
+    }
+}

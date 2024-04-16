@@ -1,0 +1,91 @@
+@import "../../../../assets/css/custom.scss";
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid #E9E9E9;
+  border-radius: 5px;
+}
+.example-spacer{
+  flex: 1 1 auto !important;
+}
+
+.avatarTitle{
+  font-size: $text18;
+  font-weight: $medium;
+  margin-top:10px;
+  margin-left: 10px;
+}
+.fileInput{
+  display: none;
+}
+.chooseImage {
+  display: inline-block;
+  padding: 6px 8px;
+  margin: 5px 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: $secondary;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+}
+
+.chooseImage span {
+  pointer-events: none;
+}
+
+.input-field {
+  margin-bottom: 15px;
+  background-color: white;
+  border: 1px solid #E9E9E9;
+  border-radius: 4px;
+  width: 100% !important;
+}
+
+.input-field label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-field input,
+.input-field textarea {
+  width: 100%;
+  padding: 5px;
+}
+
+.input-field textarea {
+  height: 100px;
+}
+
+.textarea {
+  border: none !important;
+}
+
+.clearButton {
+  margin-right: 10px;
+  color: $secondary;
+}
+
+.saveProjectButton {
+  color: $white ;
+  background-color: $secondary;
+}
+
+.projectsHeading{
+  font-size: $text18;
+  font-weight:500;
+  margin-top: 24px;
+  margin-left: 1rem;
+}
+.formHeading{
+  font-size: $text16;
+  font-weight:500;
+  margin-top: 28px;
+  margin-bottom: 28px;
+}
+
+
+
+

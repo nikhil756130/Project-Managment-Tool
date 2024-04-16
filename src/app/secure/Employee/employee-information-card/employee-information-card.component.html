@@ -1,0 +1,46 @@
+<div class="row p-1 mb-3 mx-1 employeeInfoCard">
+    <!-- heading and edit button -->
+    <div class="row py-1 my-1 pt-3">
+        <div class="col ms-3">
+            <app-image-with-text [imageSource]="employeeCardInfo.employeeCardInfo.image.src"
+            [text]="employeeCardInfo.employeeCardInfo.label" textType="heading"></app-image-with-text>
+        </div>
+        <div class="col-2 p-0 m-0 d-flex justify-content-end">
+            <button type="button" class="btn btn-white editButton">
+                <img src="../../../../assets/images/Icons/edit.png" height="18px" width="18px">Edit
+            </button>
+        </div>
+    </div>
+    <div class="row">
+        <!-- left column -->
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+            <div class="row my-3">
+                <app-label-and-value label="Username" [value]="data.username"></app-label-and-value>
+            </div>
+            <div class="row my-3">
+                <app-label-and-value label="Work Experience" [value]="data.workExperience"></app-label-and-value>
+            </div>
+            <div class="row my-3">
+                <app-label-and-value label="Department" [value]="data.department"></app-label-and-value>
+            </div>
+            <div class="row my-3">
+                <app-label-and-value label="Joining Date" [value]="data.joiningDate"></app-label-and-value>
+            </div>
+        </div>
+        <!-- right column -->
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+            <div class="row my-3">
+                <app-label-and-value label="Employee ID" [value]="data.EmployeeId"></app-label-and-value>
+            </div>
+            <div class="row my-3">
+                <app-label-and-value label="Work Email" [value]="data.workEmail"></app-label-and-value>
+            </div>
+            <div class="row my-3">
+                <app-label-and-value label="Designation" [value]="data.designation"></app-label-and-value>
+            </div>
+            <div class="row my-3">
+                <app-label-and-value label="Role" [value]="data.role"></app-label-and-value>
+            </div>
+        </div>
+    </div>
+</div>

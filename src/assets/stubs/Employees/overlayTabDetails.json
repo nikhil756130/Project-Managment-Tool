@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Basic Details",
+        "component": "basicdetails"
+    },
+    {
+        "name": "Job Details",
+        "component": "jobdetails"
+    },
+    {
+        "name": "Projects",
+        "component": "projects"
+    },
+    {
+        "name": "Salary",
+        "component": "salary"
+    },
+    {
+        "name": "Documents",
+        "component": "documents"
+    },
+    {
+        "name": "Leave Plan",
+        "component": "leaveplan"
+    }
+]

@@ -1,0 +1,22 @@
+<!-- Scheduler Part -->
+<dx-scheduler currentView="month" class="me-3 mt-3"> <!--Current view will be change accordingly-->
+
+    <!-- Day view -->
+    <dxi-view type="day" [startDayHour]="9" [endDayHour]="22"> <!--Start hour and End hour can be change accordingly-->
+    </dxi-view>
+
+    <!-- Week View -->
+    <dxi-view type="week" [startDayHour]="10" [endDayHour]="22">
+        <!--Start hour and End hour can be change accordingly-->
+    </dxi-view>
+
+    <!-- Month View -->
+    <dxi-view type="month"></dxi-view>
+
+    <!-- Dragging value will be changed in future -->
+    <dxo-editing [allowDragging]="false">
+    </dxo-editing>
+
+    <!-- below dataSource Data will come from Backend  -->
+    [dataSource]="appointmentsData"
+</dx-scheduler>

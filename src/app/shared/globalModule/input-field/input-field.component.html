@@ -1,0 +1,10 @@
+<span [formGroup]="formInstance">
+    <mat-form-field appearance="outline" class="login-input-field">
+        <mat-label *ngIf="inputConfig.label!==''">{{ inputConfig.label }}</mat-label>
+        <input matInput [placeholder]="inputConfig.placeholder" [required]="inputConfig.required"
+            [formControlName]="controlName" [type]="inputConfig.type" />
+        <mat-error
+            *ngIf="inputFormControl?.errors?.['required']">{{inputConfig.validationMessages.required}}</mat-error>
+        <mat-error *ngIf="inputFormControl?.errors?.['pattern']">{{inputConfig.validationMessages.pattern}}</mat-error>
+    </mat-form-field>
+</span>

@@ -1,0 +1,80 @@
+<div class="container-fluid bg-white">
+  <div class="row">
+    <div class="col-lg-5 col-md-12 box-shadow-right-side login-page-padding-container">
+      <!-- reusable logo-component -->
+      <app-logo class="mb-5"></app-logo>
+
+      <div class="container mt-3 pt-5">
+        <!-- reusable progress-tab component -->
+        <app-progress-tab [activeStep]="displayPart" [tabsCount]="tabsCount"></app-progress-tab>
+      </div>
+      <!-- part-2 -->
+      <h2>How are you planning on using ProManage?</h2>
+      <div [formGroup]="registrationForm3">
+        <mat-radio-group formControlName="purpose">
+          <div>
+            <mat-radio-button value="work">For Work</mat-radio-button>
+            <ng-container *ngIf="registrationForm3.get('purpose')?.value === 'work'">
+              <div class="work-category">
+                <h4>What type of work do you do?</h4>
+                <div class="select-option">
+                  <mat-select formControlName="category" placeholder="Select your role?">
+                    <mat-option value="webApp">Web Application</mat-option>
+                    <mat-option value="mobileApp">Mobile Application</mat-option>
+                    <mat-option value="desktopApp">Desktop Application</mat-option>
+                  </mat-select>
+                </div>
+              </div>
+            </ng-container>
+          </div>
+          <div>
+            <mat-radio-button value="education">For Education</mat-radio-button>
+            <ng-container *ngIf="registrationForm3.get('purpose')?.value === 'education'">
+              <div class="work-category">
+                <h4>What type of education do you do?</h4>
+                <div class="select-option">
+                  <mat-select formControlName="category" placeholder="Select your role?">
+                    <mat-option value="learning">Learning</mat-option>
+                    <mat-option value="designApp">Design Application</mat-option>
+                    <mat-option value="codePractice">Code Practice</mat-option>
+                  </mat-select>
+                </div>
+              </div>
+            </ng-container>
+          </div>
+          <div>
+            <mat-radio-button value="personal">For Personal project</mat-radio-button>
+            <ng-container *ngIf="registrationForm3.get('purpose')?.value === 'personal'">
+              <div class="work-category">
+                <h4>What type of projects do you do?</h4>
+                <div class="select-option">
+                  <mat-select formControlName="category" placeholder="Select your role?">
+                    <mat-option value="internProject">Internal Project</mat-option>
+                    <mat-option value="externProject">External Project</mat-option>
+                    <mat-option value="freelance">Freelance Project</mat-option>
+                  </mat-select>
+                </div>
+              </div>
+            </ng-container>
+          </div>
+        </mat-radio-group>
+        <div class="row">
+          <div class="col-4">
+            <button type="button" class="social-media-button back-button" (click)="getPrevious()">
+              <img src="../../assets/images/Icons/leftVector.png" alt="vector_Image" class="me-2" />Back
+            </button>
+          </div>
+          <div class="col-5">
+            <button type="button" class="social-media-button continue-button" (click)="getNext()">
+              Continue
+              <img src="../../assets/images/Icons/vector.png" alt="vector_Image" class="ms-2" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-7 col-md-12 login-page-padding-container login-right-content d-flex align-items-center">
+      <div class="row"></div>
+    </div>
+  </div>
+</div>

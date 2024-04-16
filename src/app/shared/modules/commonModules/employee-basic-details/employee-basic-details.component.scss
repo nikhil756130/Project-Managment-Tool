@@ -1,0 +1,39 @@
+@import '../../../../../assets/css/custom.scss';
+
+.button {
+  margin-right: 25px;
+}
+
+.button:hover {
+  color: #014EBA;
+}
+
+.button.active {
+  color: #014EBA;
+  font-weight: $bold;
+}
+
+.bg-white .button.active {
+  border-bottom: 3px solid #014EBA;
+}
+
+.button.active::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.bg-white .buttons-container {
+  display: flex;
+}
+
+.bg-white .button {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  /* Initial border color */
+}

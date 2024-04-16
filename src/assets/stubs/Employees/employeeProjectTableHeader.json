@@ -1,0 +1,11 @@
+{
+  "projectHeader": {
+    "image": "/assets/images/Icons/DownArrow.png",
+    "name": "Project Name",
+    "id": "ID",
+    "duration": "Project Duration",
+    "manager": "Manager",
+    "status": "Status",
+    "action": "Action"
+  }
+}

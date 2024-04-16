@@ -1,0 +1,43 @@
+<div class="row p-1 m-1  workSchedule">
+    <!-- heading and edit -->
+    <div class="row py-1 my-1 pt-3">
+        <div class="col ms-3">
+            <app-image-with-text imageSource="../../../../assets/images/Icons/contactProfileImage.png" text="Work Schedule" textType="heading">
+            </app-image-with-text>
+        </div>
+        <div class="col-2 p-0 m-0 d-flex justify-content-end">
+            <button type="button" class="btn btn-white editButton">
+                <img src="../../../../assets/images/Icons/edit.png" height="18px" width="18px">Edit
+            </button>
+        </div>
+    </div>
+    <div class="row">
+        <!-- left column -->
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+            <div class="row my-3">
+                <app-label-and-value label="Current Schedule" [value]="data.currentSchedule"></app-label-and-value>
+            </div>
+            <div class="row my-3">
+                <app-label-and-value label="Standard Working hours/day "
+                    [value]="data.standardWorkingHoursPerDay"></app-label-and-value>
+            </div>
+        </div>
+        <!-- right column -->
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+            <div class="row my-3">
+                <app-label-and-value label="Schedule Type" [value]="data.scheduleType"></app-label-and-value>
+            </div>
+            <div class="row my-3">
+                <app-label-and-value label="Total Working hours/week "
+                    [value]="data.totalWorkingHoursPerMonth"></app-label-and-value>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+            <div class="row my-3">
+                <app-label-and-multiple-values label="Daily Working hours"
+                    [valueList]="data.dailyWorkingHours"></app-label-and-multiple-values>
+            </div>
+        </div>
+    </div>
+</div>

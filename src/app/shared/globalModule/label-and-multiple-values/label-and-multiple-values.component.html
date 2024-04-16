@@ -1,0 +1,20 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col label">
+            {{label}}:
+        </div>
+        <div class="col values">
+            @for(value of valueList;track value.day)
+            {
+                <div class="row py-1 my-1">
+                    <div class="col m-0 p-0 value">
+                        {{value.day}}
+                    </div>
+                    <div class="col m-0 p-0 value">
+                        {{value.timing}}
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>

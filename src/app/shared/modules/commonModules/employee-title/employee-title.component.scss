@@ -1,0 +1,39 @@
+.projectDetailsHeader {
+    border: 1px solid #F1F1F1;
+    padding-bottom: 10px !important;
+    background-color: #FFF !important;
+  }
+
+.mat-toolbar .add-employee-button {
+  background-color: blue;
+  color: white;
+  border-color: blue;
+
+}
+button.primary-button {
+  background-color: #3f51b5;
+  color: #ffffff;
+  width: 178px;
+  height: 48px;
+  top: 84px;
+  left: 1736px;
+  padding: 11px 20px;
+  border-radius: 4px;
+  gap: 8px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+button.primary-button:hover {
+  background-color: #3949ab;
+}
+.wide-spacer {
+  flex: 2; /* Adjust the flex value as needed for more space */
+}
+
+
+.example-spacer{
+  flex: 1 1 auto;
+}

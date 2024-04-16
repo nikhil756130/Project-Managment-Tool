@@ -1,0 +1,47 @@
+<div class="row p-1 mb-3 mx-1 prohibitionDetails">
+    <!-- heading and edit buttons -->
+    <div class="row py-1 my-1 pt-3">
+        <div class="col ms-3">
+            <app-image-with-text imageSource="../../assets/images/Icons/contactProfileImage.png" text="Prohibition Details"
+                textType="heading" >
+            </app-image-with-text>
+        </div>
+        <div class="col-2 p-0 m-0 d-flex justify-content-end">
+            <button type="button" class="btn btn-white editButton">
+                <img src="../../../../assets/images/Icons/edit.png" height="18px" width="18px">Edit
+            </button>
+        </div>
+    </div>
+    <div class="row">
+        <!-- left column -->
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+            <div class="row my-3">
+                <app-label-and-value label="Start Date" [value]="data.startDate"></app-label-and-value>
+            </div>
+            <div class="row my-3">
+                <app-label-and-value label="Evaluation Date" [value]="data.evaluationDate"></app-label-and-value>
+            </div>
+            <div class="row my-3">
+                <div class="col">
+                    <app-label-and-value label="Manager"></app-label-and-value>
+                </div>
+                <div class="col">
+                    <app-image-with-text imageSource="../../../../assets/images/profile_images/managerProfileImage.png"
+                        [text]="data.manager"></app-image-with-text>
+                </div>
+            </div>
+        </div>
+        <!-- right column -->
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+            <div class="row my-3">
+                <app-label-and-value label="End Date" [value]="data.endDate"></app-label-and-value>
+            </div>
+            <div class="row my-3">
+                <app-label-and-value label="Result" [value]="data.result"></app-label-and-value>
+            </div>
+            <div class="row my-3">
+                <app-label-and-value label="Comments" [value]="data.comments"></app-label-and-value>
+            </div>
+        </div>
+    </div>
+</div>

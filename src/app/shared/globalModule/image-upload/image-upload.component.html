@@ -1,0 +1,16 @@
+<div class=" d-flex align-items-center my-3 ">
+    <div class="me-3">
+        <img src="../../../../assets/images/Icons/Ellipse.png" alt="profilePicture">
+    </div>
+    <div>
+        <p class="profile-picture">Profile Picture</p>
+        <div>
+            <input type="file" id="file" #fileInput (change)="onImageUpload($event)" accept=" .jpeg, .png" />
+            <label for="file" class="Upload-profile p-3">
+                <img src="../../../../assets/images/Icons/uploadIcon.png" alt="upload-image" width="14.699px"
+                    height="14.694px">&nbsp;<span class="upload-image p-3 pt-4">Upload Image</span>
+            </label>
+        </div>
+        <p>*.png, *.jpeg files upto 10MB</p>
+    </div>
+</div>

@@ -1,0 +1,29 @@
+{
+    "empolyeeInformation":
+    {
+            "fullname": "Lucy Hales",
+            "phone": "9876541234",
+            "dateofbirth": "8 July 1997",
+            "email": "lucyhales@mail.com",
+            "gender": "Female",
+            "address1": "121, Bakers Street Sullivan",
+            "country":  "India",
+            "state": "Goa",
+            "address2": "-",
+            "city": "Panjim",
+            "pincode": "403001",
+            "emefullname": "Glen Philips",
+            "emephonenumber": "9867542312",
+            "relationsip": "Friend"
+    },
+
+    "employeeCardInfo":
+    {
+        "image":
+        {
+            "src":"../../assets/images/Group.png"
+        },
+        "label": "Employee Information"
+    }
+
+}

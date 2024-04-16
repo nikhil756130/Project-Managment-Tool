@@ -1,0 +1,14 @@
+{
+    "employeeTableHeader": {
+      "first_column": "ID",
+      "second_column": "Employee Name",
+      "third_column": "Designation",
+      "fourth_column": "Department",
+      "fifth_column": "No. of Projects",
+      "sixth_column":"Email Id",
+      "seven_column":"Joining Date",
+      "eight_column":"Status",
+      "nine_column":"Action"
+    }
+  }
+ 

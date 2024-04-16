@@ -1,0 +1,16 @@
+<mat-toolbar class="projectDetailsHeader">
+    <mat-card-header>
+        <mat-card-subtitle class="projectSubTitle ms-3">
+            <b style="color: black;">Employees({{employeeCount}})</b>
+        </mat-card-subtitle>
+    </mat-card-header>
+
+    <!-- Add New Employee Button -->
+    <div class="wide-spacer"></div>
+    <div class="mt-1">
+        <button class="primary-button" style="font-size: 15px;" (click)="openDialog()">
+            <mat-icon style="color: white;">control_point</mat-icon>
+            <b>New Employee</b>
+        </button>
+        </div>
+</mat-toolbar>

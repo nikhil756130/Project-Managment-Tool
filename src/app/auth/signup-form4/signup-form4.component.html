@@ -1,0 +1,39 @@
+<div class="container-fluid bg-white">
+  <div class="row">
+    <div class="col-lg-5 col-md-12 box-shadow-right-side login-page-padding-container">
+      <!-- reusable logo-component -->
+      <app-logo class="mb-5"></app-logo>
+      <!-- singup form container -->
+      <div>
+        <!-- Part 1 -->
+        <div class="form-part" id="part1">
+          <div class="container mt-3 pt-5">
+            <!-- reusable progress-tab component -->
+            <app-progress-tab [activeStep]="displayPart" [tabsCount]="tabsCount"></app-progress-tab>
+          </div>
+          <h2>What would you like to name your workspace?</h2>
+          <div class="row my-3">
+            <app-label-input-field [inputConfig]="textConfig" [formInstance]="registrationForm4"
+              controlName="workspaceName" label="Work Space"></app-label-input-field>
+          </div>
+          <div class="row">
+            <div class="col-4">
+              <button type="button" class="social-media-button back-button" (click)="getPrevious()">
+                <img src="../../assets/images/Icons/leftVector.png" alt="vector_Image" class="me-2" />Back
+              </button>
+            </div>
+            <div class="col-7">
+              <button type="button" class="d-flex justify-content-center social-media-button1 continue-button"
+                (click)="onSubmitForm()">
+                Complete Signup
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-7 col-md-12 login-page-padding-container login-right-content d-flex align-items-center">
+      <div class="row"></div>
+    </div>
+  </div>
+</div>
